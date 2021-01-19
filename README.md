@@ -18,11 +18,7 @@ SIG鼓励创新思考，包容天马行空，任何你觉得值得做、有兴�
 
 ## **成立一个新SIG**
 
-SIG采用“申请制”。 当你想成立一个SIG时，请填写[申请表单](https://wj.qq.com/s2/7773399/ee41)，清楚阐述小组工作方向和目标，小助手（微信号FISCOBCOS010）将与你联系沟通。
-
-
-
-申请审核通过后，组员需共同完成小组章程，至此，一个新的SIG就诞生啦！社区也会公告新SIG成立的好消息。     
+SIG采用“申请制”。 当你想成立一个SIG时，请填写[申请表单](https://wj.qq.com/s2/7773399/ee41)，清楚阐述小组工作方向和目标，小助手（微信号FISCOBCOS010）将与你联系沟通。申请审核通过后，组员需共同完成小组章程，至此，一个新的SIG就诞生啦！社区也会公告新SIG成立的好消息。     
 
 #### **审核标准**
 
@@ -74,13 +70,13 @@ SIG采用“申请制”。 当你想成立一个SIG时，请填写[申请表单
 
 ## **社区SIG**
 
-- [FISCO BCOS上贸大SIG](FISCO%20BCOS%20SUIBE%20SIG%20README.md)
+- [FISCO BCOS上贸大](FISCO%20BCOS%20SUIBE%20SIG%20README.md)
 
 - FISCO BCOS自动化工具研发SIG
 
-- FISCO BCOS网络架构SIG
+- FISCO BCOS网络架构SIG（Network and Consensus Technology Special Interest Group）
 
-- FISCO BCOS节点架构SIG
+- FISCO BCOS节点架构SIG（Architecture and Storage Technology  Special Interest Group）
 
 
 
@@ -94,7 +90,7 @@ SIG采用“申请制”。 当你想成立一个SIG时，请填写[申请表单
 
 - 小组目标任务和日常工作不涉币，且小组一切行为均应符合国家法律法规。
 
-*如果小组违反以上任何一项，经过双方沟通，视情况可取消小组或成员资格。
+- 如果小组违反以上任何一项，经过双方沟通，视情况可取消小组或成员资格。
 
 
 
