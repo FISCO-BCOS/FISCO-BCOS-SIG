@@ -78,13 +78,10 @@ SIG采用“申请制”。 当你想成立一个SIG时，请填写[申请表单
 
 - FISCO BCOS自动化工具研发SIG
 
-- FISCO BCOS智能合约编程语言SIG
-
 - FISCO BCOS网络架构SIG
 
 - FISCO BCOS节点架构SIG
 
-- FISCO BCOS跨链SIG
 
 
 
