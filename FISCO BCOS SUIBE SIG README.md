@@ -23,12 +23,12 @@ FISCO BCOS上贸大专项兴趣小组由来自不同高校的学生和老师组�
 | **项目名称**                                | **项目地址**                                           | **体验地址**                      | **下一步计划**                         |
 | ------------------------------------------- | ------------------------------------------------------ | --------------------------------- | -------------------------------------- |
 | FISCO BCOS 区块链开发工具箱（语言：Python） | https://github.com/SUIBE-Blockchain/FISCO_BCOS_Toolbox | https://tools.doge.university     | 集成 WeBase-Front                      |
-| 基于WeIdentity的超级发证（语言：Elixir）    | https://github.com/leeduckgo/super_issuer              | https://superissuer.cyberemd.com/ | 完善凭证排行榜功能                     |
-| 小组月报                                    |                                                        |                                   | 目前正在设计月报样式，一月出第一期月报 |
+| 基于WeIdentity的超级发证（语言：Elixir）    | https://github.com/leeduckgo/super_issuer              | https://superissuer.cyberemd.com/ | 完善凭证排行榜功能                     
 
 -  **开发中项目**
 
    - DID离线统一管理工具（语言：Python）
+   - 小组月报
 
 ## 小组成果
 
@@ -78,4 +78,4 @@ FISCO BCOS上贸大专项兴趣小组由来自不同高校的学生和老师组�
 
 - **近期会议**
 
-- **往期会议回顾**
+2021年1月举行，总结本月进展。
