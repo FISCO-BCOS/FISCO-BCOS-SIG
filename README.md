@@ -74,7 +74,7 @@ SIG采用“申请制”。 当你想成立一个SIG时，请填写[申请表单
 
 ## **社区SIG**
 
-- FISCO BCOS上贸大SIG
+- [FISCO BCOS上贸大SIG](FISCO%20BCOS%20SUIBE%20SIG%20README.md)
 
 - FISCO BCOS自动化工具研发SIG
 
