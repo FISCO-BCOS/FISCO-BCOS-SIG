@@ -103,6 +103,6 @@ SIG采用“申请制”。 当你想成立一个SIG时，请填写[申请表单
 
 ## **附件**
 
-- FISCO BCOS专项兴趣小组章程
+- [FISCO BCOS专项兴趣小组章程模板](https://share.weiyun.com/CPEr7sv8)
 
   
