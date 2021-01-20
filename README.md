@@ -74,9 +74,9 @@ SIG采用“申请制”。 当你想成立一个SIG时，请填写[申请表单
 
 - FISCO BCOS自动化工具研发SIG
 
-- FISCO BCOS网络架构SIG（Network and Consensus Technology Special Interest Group）
+- FISCO BCOS网络架构SIG（Network and Consensus Technology Special Interest Group,NC-SIG）
 
-- FISCO BCOS节点架构SIG（Architecture and Storage Technology  Special Interest Group）
+- FISCO BCOS节点架构SIG（Architecture and Storage Technology  Special Interest Group,AS-SIG）
 
 
 
