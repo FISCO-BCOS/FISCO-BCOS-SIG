@@ -25,6 +25,10 @@ FISCO BCOS节点架构与存储专项小组（Architecture and Storage Special I
 | **姓名** | **所属单位**  | **职业**   | **擅长技能** | **个人简介/主页** |
 | -------- | ------------ | --------- | -------------- | -------------------- |
 | 白兴强  | FISCO BCOS |   核心开发者、AS-SIG组长 | 区块链底层开发，存储、智能合约语言与虚拟机、网络等，C/C++/shell/Golang/rust | 编译器驱动开发。https://github.com/bxq2011hust|
+| 林宣名  | 厦门哈希科技 |  厦门哈希科技联合创始人& CTO| 区块链底层开发、区块链应用架构，精通 C#，熟练使用java、python、go、rust、node.js，前端vue.js、angular.js等|FISCO BCOS C# SDK 作者， 集美大学区块链产学研导师，CCF YOCSEF委员。CSDN签约讲师，BSN合格开发者，FISCO BCOS年度开源贡献者，元磁之力区块链社区发起者。技术极客，热衷开源和生产实践的技术赋能。关注前沿技术，专注领域：区块链、AI。https://github.com/linbin524|
+| 黄清昊  | 腾讯 | 普通打工人 | 熟悉 Traffic Infra 相关开发。 熟悉Golang/C++/JavaScript。 | 对存储、网络、分布式协议感兴趣。 前阿里云前端工程师，前字节跳动服务端工程师。[wfnuser](https://github.com/wfnuser/)|
+
+
 
 ## 小组会议
 
