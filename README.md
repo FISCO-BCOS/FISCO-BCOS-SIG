@@ -78,6 +78,8 @@ SIG采用“申请制”。 当你想成立一个SIG时，请填写[申请表单
 
 - [FISCO BCOS节点架构SIG（Architecture and Storage Special Interest Group,AS-SIG）](./AS-SIG/README.md)
 
+- [FISCO BCOS智能合约编译技术SIG（Compiling Technology of Smart Contract，CTSC-SIG）](./CTSC-SIG/README.md)
+
 
 
 
