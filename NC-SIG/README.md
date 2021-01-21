@@ -49,3 +49,4 @@
 | 王超 | | | | |
 | 虎振兴 | | | | |
 | 庄虔伟 | | | | |
+| 饶应典 | 中科智能区块链| 区块链工程师 | 区块链底层开发，共识机制，golang | [vvMonster](https://github.com/vvMonster/)|
