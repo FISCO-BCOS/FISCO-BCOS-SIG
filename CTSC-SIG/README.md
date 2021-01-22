@@ -29,4 +29,4 @@ FISCO BCOS智能合约编译技术专项兴趣小组（Compiling Technology of S
 | 任萌 | 清华大学 | | | | |
 | 谢朝阳 | 西安电子科技大学 | | | | |
 | 李文宙 | 湖南链信安科技有限公司 | | | | |
-| 王鑫 | 深圳大学 | | | | |
+| 王鑫 | 深圳大学 | 深圳大学学生 | solidity/Node.js | 努力加油，勇敢探索，遨游区块世界 | https://github.com/DarionRichie/ |
