@@ -1,7 +1,7 @@
 
 ## 小组目标
 
-FISCO BCOS 跨链兴趣小组（Cross-Chain Special Interest Group，CC-SIG）工作围绕跨链协作平台WeCross展开，致力于解决FISCO BCOS和其它异构链互联互通问题。
+FISCO BCOS跨链兴趣小组（Cross-Chain Special Interest Group，CC-SIG）工作围绕跨链协作平台WeCross展开，致力于解决FISCO BCOS和其它异构链互联互通问题。
 
 WeCross是微众银行区块链自研并开源的跨链协作平台， 正式版本v1.1.0已于近期发布，支持一站式跨链管理、插件式跨链接入、合约跨链调用、跨链事务保障等功能。
 
