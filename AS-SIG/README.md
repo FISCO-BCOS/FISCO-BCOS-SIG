@@ -28,7 +28,7 @@ FISCO BCOS节点架构与存储专项小组（Architecture and Storage Special I
 | 林宣名  | 厦门哈希科技 |  厦门哈希科技联合创始人& CTO| 区块链底层开发、区块链应用架构，精通 C#，熟练使用java、python、go、rust、node.js，前端vue.js、angular.js等|FISCO BCOS C# SDK 作者， 集美大学区块链产学研导师，CCF YOCSEF委员。CSDN签约讲师，BSN合格开发者，FISCO BCOS年度开源贡献者，元磁之力区块链社区发起者。技术极客，热衷开源和生产实践的技术赋能。关注前沿技术，专注领域：区块链、AI。https://github.com/linbin524|
 | 黄清昊  | 腾讯 | 普通打工人 | 熟悉 Traffic Infra 相关开发。 熟悉Golang/C++/JavaScript。 | 对存储、网络、分布式协议感兴趣。 前阿里云前端工程师，前字节跳动服务端工程师。[wfnuser](https://github.com/wfnuser/)|
 | 梁睿 | 成都如清科技 | 后台开发 | 服务端开发、熟悉C++ | 后台开发、预研，C++秃击者，刚入门还在用吃奶劲学习的技术小白[stingliang](https://gitee.com/stingliang) |
-
+| 黄一 | 成都万物数创 | 后端/桌面开发 | windows PE/驱动，区块链智能合约，BIM相关平台，熟悉MASM/C/C++/C#，使用过Golang/Lua/Python/Rust/MaxScript/Lisp | 对区块链底层原理感兴趣，前逆向工程师，现BIM+边缘区块链开发工程师，BIM轻量化工程师[saberdance](https://github.com/saberdance) |
 
 
 ## 小组会议
