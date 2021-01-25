@@ -1,4 +1,4 @@
-> 小组月报：https://monthly.leeduckgo.com
+> **小组月报：** https://monthly.leeduckgo.com
 > 
 > 可通过小组月报查看小组最新进展！
 
