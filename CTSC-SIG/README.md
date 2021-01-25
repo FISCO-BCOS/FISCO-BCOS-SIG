@@ -25,7 +25,7 @@ FISCO BCOS智能合约编译技术专项兴趣小组（Compiling Technology of S
 | **姓名** | **所属单位**  | **职业**   | **擅长技能** | **个人简介** | **个人主页** |
 | -------- | ------------ | ---------- | ----------- | ------------ | ----------- |
 | 李陈希 | 微众银行 | 区块链底层开发工程师 | C++/Rust/Node.js/Python | Linux 0.02版本发布宣言：“曾几何时，男人都是真汉子，自己动手写设备驱动。你是否渴望回到那个时候？”<br>***YES, I DO!*** | [https://github.com/vita-dounai/](https://github.com/vita-dounai/)|
-| 马福辰 | 清华大学 | | | | |
+| 马福辰 | 清华大学 | 博士研究生 | Fuzzing/Symbolic Execution/Datalog Analysis | 区块链和p2p技术的探索者，不断学习中！ | https://fcorleone.github.io/ |
 | 任萌 | 清华大学 | | | | |
 | 谢朝阳 | 西安电子科技大学 | | | | |
 | 李文宙 | 湖南链信安科技有限公司 | | | | |
