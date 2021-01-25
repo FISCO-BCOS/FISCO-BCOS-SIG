@@ -1,4 +1,5 @@
 > 小组月报：https://monthly.leeduckgo.com
+> 
 > 可通过小组月报查看小组最新进展！
 
 FISCO BCOS上贸大专项兴趣小组由来自不同高校的学生和老师组成，致力于围绕FISCO BCOS开源社区开源项目进行研究和应用研发，例如基于WeIdentity 方案进行基础设施研发与应用研发等等。
