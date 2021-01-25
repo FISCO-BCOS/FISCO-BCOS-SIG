@@ -4,7 +4,19 @@
 
 SIG有明确的任务目标和协作规范。组内成员深度交流、开放协作、共同治理，按照共识的协作规范一起完成约定的任务目标。
 
+## **社区SIG**
 
+- [FISCO BCOS上贸大SIG](FISCO%20BCOS%20SUIBE%20SIG%20README.md)
+
+- FISCO BCOS自动化工具研发SIG
+
+- [FISCO BCOS网络架构SIG（Network and Consensus Special Interest Group，NC-SIG）](./NC-SIG/README.md)
+
+- [FISCO BCOS节点架构SIG（Architecture and Storage Special Interest Group，AS-SIG）](./AS-SIG/README.md)
+
+- [FISCO BCOS智能合约编译技术SIG（Compiling Technology of Smart Contract，CTSC-SIG）](./CTSC-SIG/README.md)
+
+- [FISCO BCOS跨链SIG（Cross-Chain Special Interest Group，CC-SIG）](./CC-SIG/README.md)
 
 ## **SIG工作方向**
 
@@ -65,24 +77,6 @@ SIG采用“申请制”。 当你想成立一个SIG时，请填写[申请表单
 - 优秀的工作成果、成员风采等内容将以专题采访、特邀演讲等形式传播。
 
 **......**
-
-
-
-## **社区SIG**
-
-- [FISCO BCOS上贸大SIG](FISCO%20BCOS%20SUIBE%20SIG%20README.md)
-
-- FISCO BCOS自动化工具研发SIG
-
-- [FISCO BCOS网络架构SIG（Network and Consensus Special Interest Group，NC-SIG）](./NC-SIG/README.md)
-
-- [FISCO BCOS节点架构SIG（Architecture and Storage Special Interest Group，AS-SIG）](./AS-SIG/README.md)
-
-- [FISCO BCOS智能合约编译技术SIG（Compiling Technology of Smart Contract，CTSC-SIG）](./CTSC-SIG/README.md)
-
-- [FISCO BCOS跨链SIG（Cross-Chain Special Interest Group，CC-SIG）](./CC-SIG/README.md)
-
-
 
 
 ## **FISCO BCOS开源社区协作基本手则**
