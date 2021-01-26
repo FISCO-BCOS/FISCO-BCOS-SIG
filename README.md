@@ -4,7 +4,19 @@
 
 SIG有明确的任务目标和协作规范。组内成员深度交流、开放协作、共同治理，按照共识的协作规范一起完成约定的任务目标。
 
+## **社区SIG**
 
+- [FISCO BCOS上贸大SIG](FISCO%20BCOS%20SUIBE%20SIG%20README.md)
+
+- FISCO BCOS自动化工具研发SIG
+
+- [FISCO BCOS网络架构SIG（Network and Consensus Special Interest Group，NC-SIG）](./NC-SIG/README.md)
+
+- [FISCO BCOS节点架构SIG（Architecture and Storage Special Interest Group，AS-SIG）](./AS-SIG/README.md)
+
+- [FISCO BCOS智能合约编译技术SIG（Compiling Technology of Smart Contract，CTSC-SIG）](./CTSC-SIG/README.md)
+
+- [FISCO BCOS跨链SIG（Cross-Chain Special Interest Group，CC-SIG）](./CC-SIG/README.md)
 
 ## **SIG工作方向**
 
@@ -67,22 +79,6 @@ SIG采用“申请制”。 当你想成立一个SIG时，请填写[申请表单
 **......**
 
 
-
-## **社区SIG**
-
-- [FISCO BCOS上贸大SIG](FISCO%20BCOS%20SUIBE%20SIG%20README.md)
-
-- FISCO BCOS自动化工具研发SIG
-
-- [FISCO BCOS网络架构SIG（Network and Consensus Special Interest Group,NC-SIG）](./NC-SIG/README.md)
-
-- [FISCO BCOS节点架构SIG（Architecture and Storage Special Interest Group,AS-SIG）](./AS-SIG/README.md)
-
-- [FISCO BCOS智能合约编译技术SIG（Compiling Technology of Smart Contract，CTSC-SIG）](./CTSC-SIG/README.md)
-
-
-
-
 ## **FISCO BCOS开源社区协作基本手则**
 - 使用FISCO BCOS logo须符合品牌规范；
 
@@ -90,7 +86,7 @@ SIG采用“申请制”。 当你想成立一个SIG时，请填写[申请表单
 
 - 兴趣小组不以盈利为目的，任何组员不能以FISCO BCOS兴趣小组名义从事盈利性行为；
 
-- 小组目标任务和日常工作不涉币，且小组一切行为均应符合国家法律法规。
+- 小组目标任务和日常工作不涉币，且小组一切行为均应符合国家法律法规；
 
 - 如果小组违反以上任何一项，经过双方沟通，视情况可取消小组或成员资格。
 

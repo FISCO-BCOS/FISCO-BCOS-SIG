@@ -47,6 +47,7 @@
 | 陈宇杰  | FISCO BCOS |   组长    | 区块链底层开发，共识机制、网络等，C/C++/shell/Java | [cyjseagull](http://github.com/cyjseagull/)|
 | 黄子龙 | 独立开发者|组员 | 前端、区块链底层开发、隐私计算、网络等，C/C++/TypeScript/Java/Rust | [nanjingboy](https://github.com/nanjingboy)|
 | 王超 | 亚信科技 | 组员 | 应用、区块链底层开发，golang/shell/Java | [wattswang](https://github.com/wattswang) |
-| 虎振兴 | | | | |
-| 庄虔伟 | | | | |
+| 虎振兴 |独立开发者|组员 |区块链底层开发、公链网络等, C++ |[hzxGoForward](https://github.com/hzxGoForward) |
+| 庄虔伟 | XENIRO | 程序员 |PBFT、Tendermint、Raft,  C++ | 对分布式、网络、产品感兴趣[zhuangql](https://github.com/zhuangql)|
 | 饶应典 | 中科智能区块链| 区块链工程师 | 区块链底层开发，共识机制，golang | [vvMonster](https://github.com/vvMonster/)|
+| 蔡文欢 | 深圳网安| C++工程师 | C++、网络协议分析 | [caiwenhuan](https://github.com/wenhuancai/)|
