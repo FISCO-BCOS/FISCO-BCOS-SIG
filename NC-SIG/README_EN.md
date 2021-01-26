@@ -4,9 +4,11 @@
 
 The Network and Consensus Special Interest Group(NC-SIG) is mainly responsible for the design and development of the FISCO BCOS 3.0 network and consensus components, as follows:
 
-- **Organization-oriented network architecture design and development**: mainly related to network frameworks and network protocols, Routing protocol, load balancing mechanism, etc.
+- **Organization-oriented hierarchical network architecture design and development**:Basing from the actual needs of the institutional alliance blockchain, the second-layer network is introduced on the basis of the institutional node network. Design access, governance, and distribution mechanisms based on the second-tier network to achieve a safe, efficient, stable, and scalable hierarchical network architecture
 
-- **Componentized consensus algorithm plug-in**: realize componentized Raft and PBFT consensus algorithms that can be applied to distributed systems and blockchain systems at the same time, and from the perspective of institutions, design organization-oriented consensus algorithms to optimize the scalability of consensus algorithms
+- **Design and development of basic components of blockchain network**: The next generation of FISCO BCOS will reorganize and split the existing blockchain functional modules, develop towards more modularity and plug-in, and provide reusable micro-components or micro-services. NC-SIG will further study the blockchain network Architecture and protocol design to create reusable and pluggable network infrastructure components
+
+- **Organization-oriented consensus algorithm design**: Starting from the actual scenario of the institutional alliance blockchain, comprehensively considering the differences in security requirements within and between institutions, abstract consensus component interfaces, reshape the current consensus algorithm, realize flexible, universal, safe and scalable consensus components, and continue to optimize consensus Algorithm performance, throughput and scalability
 
 ## Group Collaboration Process
 
@@ -35,12 +37,12 @@ The Network and Consensus Special Interest Group(NC-SIG) is mainly responsible f
 
 **Claim**
 
-- Agree with the values of the open source community and abide by the rules of community operation
-- Actively participate in group activities, willing to contribute one's own strength to help product iterative evolution
+- Interested in the network and consensus algorithm, willing to actively participate in group activities to help continuously optimize and improve the FISCO BCOS network architecture and consensus algorithm components
+- Familiar with 1 to 2 programming languages such as C++/Go/Shell/Python/Rust/Java
+- Learn about some common blockchain platforms, such as FISCO BCOS, etc.
+- Understand common git operation commands
 - Full of curiosity about the unknown, with an open vision and a willingness to explore, able to continuously invest in learning
 - Have a sense of responsibility. When you take on a task in the community, you need to be responsible for the task progress, task output and subsequent maintenance
-- Respect other members, communicate in an equal and friendly manner, and discuss different views rationally
-
 
 ## Group Members
 
