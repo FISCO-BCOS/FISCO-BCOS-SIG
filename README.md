@@ -4,19 +4,19 @@
 
 SIG有明确的任务目标和协作规范。组内成员深度交流、开放协作、共同治理，按照共识的协作规范一起完成约定的任务目标。
 
-## **社区SIG**
+## **FISCO BCOS 社区SIG**
 
-- [FISCO BCOS上贸大SIG](FISCO%20BCOS%20SUIBE%20SIG%20README.md)
+- [上贸大 FISCO BCOS 兴趣小组](FISCO%20BCOS%20SUIBE%20SIG%20README.md)
 
-- FISCO BCOS自动化工具研发SIG
+- 自动化工具研发小组
 
-- [FISCO BCOS网络架构SIG（Network and Consensus Special Interest Group，NC-SIG）](./NC-SIG/README.md)
+- [NC-SIG ：网络架构与共识小组（Network and Consensus Special Interest Group @FISCO BCOS）](./NC-SIG/README.md)
 
-- [FISCO BCOS节点架构SIG（Architecture and Storage Special Interest Group，AS-SIG）](./AS-SIG/README.md)
+- [AS-SIG ：节点架构与存储小组（Architecture and Storage Special Interest Group @FISCO BCOS）](./AS-SIG/README.md)
 
-- [FISCO BCOS智能合约编译技术SIG（Compiling Technology of Smart Contract，CTSC-SIG）](./CTSC-SIG/README.md)
+- [CTSC-SIG ：智能合约编译技术小组（Compiling Technology of Smart Contract @FISCO BCOS）](./CTSC-SIG/README.md)
 
-- [FISCO BCOS跨链SIG（Cross-Chain Special Interest Group，CC-SIG）](./CC-SIG/README.md)
+- [CC-SIG ：跨链兴趣小组（Cross-Chain Special Interest Group @FISCO BCOS）](./CC-SIG/README.md)
 
 ## **SIG工作方向**
 
