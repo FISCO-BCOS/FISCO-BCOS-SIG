@@ -30,6 +30,7 @@ FISCO BCOS节点架构与存储专项小组（Architecture and Storage Special I
 | 梁睿 | 成都如清科技 | 后台开发 | 服务端开发、熟悉C++ | 后台开发、预研，C++秃击者，刚入门还在用吃奶劲学习的技术小白[stingliang](https://gitee.com/stingliang) |
 | 黄一 | 四川万物数创科技 | 后端/桌面开发 | windows PE/驱动，区块链智能合约，BIM相关平台，熟悉MASM/C/C++/C#，使用过Golang/Lua/Python/Rust/MaxScript/Lisp | 对区块链底层原理感兴趣，前逆向工程师，现BIM+边缘区块链开发工程师，BIM轻量化工程师[saberdance](https://github.com/saberdance) |
 | 梁腾 | 上海新致软件 | 技术经理 | 云原生，区块链智能合约，熟悉java，shell，JavaScript，前端vue.js,angular.js等 | 对区块链底层感兴趣，全栈工程师 [ltyuanmu](https://github.com/ltyuanmu) |
+| 刘仲明 | 中兴协力（山东）教育科技集团 | 全栈开发 | 擅长java，熟悉go语言、solidity语言，熟悉kubernetes、docker等容器技术 | [aiottots](https://github.com/aiottots) |
 
 
 ## 小组会议
