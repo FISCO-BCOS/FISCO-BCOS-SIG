@@ -39,3 +39,5 @@ FISCO BCOS节点架构与存储专项小组（Architecture and Storage Special I
 
 - 1月16日，小组初始6名成员（黄一、林宣名、梁睿、黄清昊、李辉忠、白兴强）第一次例会，会议主要促进现有成员之间相互了解。
 - 1月23日，小组组织第一次FISCO BCOS源码阅读，依据[带你读源码：四大视角多维走读区块链源码](https://mp.weixin.qq.com/s/Erm1XV9n9gmwVn6-8Tda7w)阅读初始化模块。
+- 2月6日，小组组织第二次FISCO BCOS源码阅读，由梁睿分享阅读存储模块代码与接入其他数据库的实践经验，[会议录屏请参考](https://meeting.tencent.com/user-center/shared-record-info?id=b8d88f3d-af71-4227-a790-24c9b161bbad&reload=1)。
+
