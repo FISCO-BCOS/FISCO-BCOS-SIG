@@ -8,11 +8,7 @@ SIG有明确的任务目标和协作规范。组内成员深度交流、开放�
 
 - [上贸大 FISCO BCOS 兴趣小组](FISCO%20BCOS%20SUIBE%20SIG%20README.md)
 
-<<<<<<< HEAD
-- 自动化工具研发小组
-=======
 - [FISCO BCOS自动化工具研发SIG (Automation Tools Develop Special Interest Group，ATD-SIG)](./ATD-SIG/README.md)
->>>>>>> 173eae1 (新增自动化工具研发小组介绍)
 
 - [NC-SIG ：网络架构与共识小组（Network and Consensus Special Interest Group @FISCO BCOS）](./NC-SIG/README.md)
 
