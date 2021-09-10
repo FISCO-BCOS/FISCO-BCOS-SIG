@@ -18,6 +18,8 @@ SIG有明确的任务目标和协作规范。组内成员深度交流、开放�
 
 - [CC-SIG ：跨链兴趣小组（Cross-Chain Special Interest Group @FISCO BCOS）](./CC-SIG/README.md)
 
+- [PCC-SIG ：预编译合约兴趣小组（Precompiled contract Special Interest Group @FISCO BCOS）](./PCC-SIG/README.md)
+
 ## **SIG工作方向**
 
 SIG鼓励创新思考，包容天马行空，任何你觉得值得做、有兴趣做的方向，社区都欢迎你提出。当然，我们也提供以下几类方向供参考：
