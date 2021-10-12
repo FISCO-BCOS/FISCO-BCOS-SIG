@@ -15,7 +15,7 @@ FISCO BCOS智能合约兴趣小组智能合约兴趣小组（Smart contract Spec
 | **姓名** | **所属单位**  | **职业**   | **擅长技能** | **个人简介/主页** |
 | -------- | ------------ | --------- | -------------- | -------------------- |
 | chu | 微众银行 | 区块链研发  | solidity,java,rust | https://github.com/masonhunk |
-
+| 何结兵 | 上海久誉软件系统有限公司 | Java研发  | java | https://github.com/freezehe |
 ## 加入小组
 
 要求：
