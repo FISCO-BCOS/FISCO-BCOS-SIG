@@ -18,6 +18,7 @@ FISCO BCOS智能合约兴趣小组智能合约兴趣小组（Smart contract Spec
 |jianglongwei|希望软件|IT项目管理,区块链应用研发|solidity,java|https://github.com/jianglongwei|
 | 崔宇 | 北方工业大学 | 信息安全专业 | solidity,C++,QT,Linux | https://github.com/cuiyuchain |
 | 何结兵 | 上海久誉软件系统有限公司 | Java研发  | java | https://github.com/freezehe |
+| 熊欢周 | 知道创宇 | 安全研究员 | solidity | 区块链，白帽子，审计 |
 
 ## 加入小组
 
