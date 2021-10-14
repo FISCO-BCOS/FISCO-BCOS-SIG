@@ -22,7 +22,7 @@ FISCO BCOS智能合约兴趣小组智能合约兴趣小组（Smart contract Spec
 | Iron | 光大 | 区块链研发 | solidity,go,java | https://github.com/IronStrong |
 | 高野 | 京北方 | 区块链应用研发、授课 | solidity,Golang,C | https://github.com/yekai1003 |
 | 王炯 | 中兴协力（山东）教育科技集团有限公司 | 区块链产品经理  | go,python,solidity | https://github.com/LunaWang5209  |
-
+| LoneRanger | 深圳大学 | 金融科技专业 | C++,python,solidity | https://github.com/longranger2  |
 ## 加入小组
 
 要求：
