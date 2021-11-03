@@ -1,7 +1,7 @@
 
 ## 小组目标
 
-FISCO BCOS智能合约兴趣小组智能合约兴趣小组（Smart contract Special Interest Group @FISCO BCOS）致力于研究和开发智能合约通用功能、组件，并基于智能合约，提供完整的分布式应用DEMO，提升智能合约及应用开发的效率，降低合约开发门槛和安全漏洞风险。
+FISCO BCOS智能合约兴趣小组（Smart contract Special Interest Group @FISCO BCOS）致力于研究和开发智能合约通用功能、组件，并基于智能合约，提供完整的分布式应用DEMO，提升智能合约及应用开发的效率，降低合约开发门槛和安全漏洞风险。
 
 ## 小组任务
 参与智能合约库及分布式应用建设，包括但不限于：
@@ -11,10 +11,22 @@ FISCO BCOS智能合约兴趣小组智能合约兴趣小组（Smart contract Spec
 - 作为管理者，挖掘未实现的合约功能，提出合约需求
 - 作为参与者，分享贡献内容，提升合约库影响力
 
+## 智能合约库
+[github项目地址](https://github.com/WeBankBlockchain/SmartDev-Contract/)
+[项目文档](https://smartdev-doc.readthedocs.io/zh_CN/latest/docs/WeBankBlockchain-SmartDev-Contract/index.html)
+
+
 ## 小组成员
 | **姓名** | **所属单位**  | **职业**   | **擅长技能** | **个人简介/主页** |
 | -------- | ------------ | --------- | -------------- | -------------------- |
 | chu | 微众银行 | 区块链研发  | solidity,java,rust | https://github.com/masonhunk |
+|jianglongwei|希望软件|IT项目管理,区块链应用研发|solidity,java|https://github.com/jianglongwei|
+| 崔宇 | 北方工业大学 | 信息安全专业 | solidity,C++,QT,Linux | https://github.com/cuiyuchain |
+| 何结兵 | 上海久誉软件系统有限公司 | Java研发  | java | https://github.com/freezehe |
+| 熊欢周 | 知道创宇 | 安全研究员 | solidity | 区块链，白帽子，审计 |
+| Iron | 光大 | 区块链研发 | solidity,go,java | https://github.com/IronStrong |
+| 高野 | 京北方 | 区块链应用研发、授课 | solidity,Golang,C | https://github.com/yekai1003 |
+| 王炯 | 中兴协力（山东）教育科技集团有限公司 | 区块链产品经理  | go,python,solidity | https://github.com/LunaWang5209  |
 
 ## 加入小组
 
