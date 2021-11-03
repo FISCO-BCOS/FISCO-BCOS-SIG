@@ -1,7 +1,7 @@
 
 ## 小组目标
 
-FISCO BCOS智能合约兴趣小组智能合约兴趣小组（Smart contract Special Interest Group @FISCO BCOS）致力于研究和开发智能合约通用功能、组件，并基于智能合约，提供完整的分布式应用DEMO，提升智能合约及应用开发的效率，降低合约开发门槛和安全漏洞风险。
+FISCO BCOS智能合约兴趣小组（Smart contract Special Interest Group @FISCO BCOS）致力于研究和开发智能合约通用功能、组件，并基于智能合约，提供完整的分布式应用DEMO，提升智能合约及应用开发的效率，降低合约开发门槛和安全漏洞风险。
 
 ## 小组任务
 参与智能合约库及分布式应用建设，包括但不限于：
@@ -10,6 +10,11 @@ FISCO BCOS智能合约兴趣小组智能合约兴趣小组（Smart contract Spec
 - 作为维护者，对合约库代码进行评审、修订、合并
 - 作为管理者，挖掘未实现的合约功能，提出合约需求
 - 作为参与者，分享贡献内容，提升合约库影响力
+
+## 智能合约库
+[github项目地址](https://github.com/WeBankBlockchain/SmartDev-Contract/)
+[项目文档](https://smartdev-doc.readthedocs.io/zh_CN/latest/docs/WeBankBlockchain-SmartDev-Contract/index.html)
+
 
 ## 小组成员
 | **姓名** | **所属单位**  | **职业**   | **擅长技能** | **个人简介/主页** |
