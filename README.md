@@ -154,14 +154,17 @@ FISCO BCOS开源已近5年，一路行来，数万名开发者、数千家企业
 [https://github.com/WeBankBlockchain/WeCross/labels/Task-M](https://github.com/WeBankBlockchain/WeCross/labels/Task-M)
 
 ## 02 奖励介绍
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/8b9b9bc9945c4582a8804a6244074d0c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBARklTQ09fQkNPUw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
 
 ## 03 参与流程
+
 本次活动可以个人方式参与也可组队参与，流程如下所示：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/5ba448002ca84aeb8dace4e7094a4692.png#pic_center)
 
 **报名方式**
+
 添加小助手微信：FISCOBCOS010，进入活动专属交流群。加好友时请备注：**Task挑战**
 
 **领任务**
