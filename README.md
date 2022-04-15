@@ -140,7 +140,7 @@ FISCO BCOS开源已近5年，一路行来，数万名开发者、数千家企业
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/d2d5b490778f47d28f527121e7aea038.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBARklTQ09fQkNPUw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
 更多FISCO BCOS的任务详情描述可参考：
 
-[https://github.com/FISCO-BCOS/java-sdk/projects/2](https://github.com/FISCO-BCOS/FISCO-BCOS/projects/2)
+[https://github.com/FISCO-BCOS/java-sdk/projects/2](https://github.com/FISCO-BCOS/java-sdk/projects/2)
 
 [https://github.com/FISCO-BCOS/FISCO-BCOS/projects/3](https://github.com/FISCO-BCOS/FISCO-BCOS/projects/3)
 
@@ -158,7 +158,9 @@ FISCO BCOS开源已近5年，一路行来，数万名开发者、数千家企业
 
 ## 03 参与流程
 本次活动可以个人方式参与也可组队参与，流程如下所示：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/5ba448002ca84aeb8dace4e7094a4692.png#pic_center)
+
 **报名方式**
 添加小助手微信：FISCOBCOS010，进入活动专属交流群。加好友时请备注：**Task挑战**
 
