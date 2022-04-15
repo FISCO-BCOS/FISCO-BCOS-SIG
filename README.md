@@ -291,3 +291,7 @@ Github代码仓库：
 >项目代码符合政策和监管要求，不出现coin、token等字眼，功能层面不出现代币、Defi等场景；
 >
 >奖品将在活动结束后的15个工作日内完成发放。
+
+## 推荐阅读
+
+[如何提交PR？如何参与共建FISCO BCOS？](https://mp.weixin.qq.com/s/RjlJZZ4RwtEDV33KBEoRNQ)
