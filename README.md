@@ -101,4 +101,198 @@ SIG采用“申请制”。 当你想成立一个SIG时，请填写[申请表单
 
 - [FISCO BCOS专项兴趣小组章程模板](https://share.weiyun.com/CPEr7sv8)
 
+## **社区Task挑战赛开启，阶梯式任务等你来战** 
 
+![在这里插入图片描述](https://img-blog.csdnimg.cn/d6f581769b914e6bbe10e76137c25ac6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBARklTQ09fQkNPUw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
+FISCO BCOS开源已近5年，一路行来，数万名开发者、数千家企业机构、数百位社区贡献者汇聚于此，践行开源共创精神，协力打造开放多元的开源联盟链生态。在大家的共建下，FISCO BCOS生态不断丰富完善，涌现了众多开发工具，让FISCO BCOS的开发体验越来越丝滑友好。
+
+2022年，社区Task挑战赛再度来袭，我们期待你的贡献，因为这份贡献将会汇聚为强大的社区之力，勾勒出令人惊叹的奇景。
+
+在新一季挑战赛中，社区联合WeBASE开发团队及3个专项兴趣小组（SC-SIG\ NC-SIG\CC-SIG），基于中间件平台WeBASE、智能合约库、联盟链底层平台FISCO BCOS、跨链协作平台WeCross准备了近百项阶梯式Task，涵盖开发新特性、丰富组件功能、优化代码注释、贡献合约模板、原创各类代码走读教程、技术解析文章等。
+
+欢迎大家Pick心仪的Task参与！当然，你还可以发布自定义Task，邀请社区开发者来解答。活动期间，你会入驻专属活动交流群，与技术达人一同切磋交流，还可获得扫地机器人、按摩仪、无线耳机、智能手环、社区周边等精美礼品。
+![在这里插入图片描述](https://img-blog.csdnimg.cn/dbc370dea8f94aa28117a81563c17b9c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBARklTQ09fQkNPUw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
+
+## 01 参与方式
+**玩法一：领取Task，参与项目共建**
+
+开发新特性，丰富组件功能，优化代码注释，提供智能合约模板，解答issue，优化技术文档等。
+
+**玩法二：领取Task，参与技术布道**
+
+原创各类开发部署等项目相关技术教程，代码走读教程，技术解析文章。
+
+**玩法三：自定义Task**
+
+发布你的自定义任务，可以是征集解决方案、特性或周边工具开发、教程等；或是参与其他社区开发者提交的自定义任务。
+
+### Task列表 （★为Task难易程度参考）
+**1. 中间件平台WeBASE Task** 
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/6444eaeb291f4024a6b7fad4b4dbb503.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBARklTQ09fQkNPUw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
+
+**2. 智能合约库Task**
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/7b7f1ee64363400f9b258d9d8f4d543e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBARklTQ09fQkNPUw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
+
+**3. 联盟链底层平台FISCO BCOS Task**
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/d2d5b490778f47d28f527121e7aea038.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBARklTQ09fQkNPUw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
+更多FISCO BCOS的任务详情描述可参考：
+
+[https://github.com/FISCO-BCOS/java-sdk/projects/2](https://github.com/FISCO-BCOS/java-sdk/projects/2)
+
+[https://github.com/FISCO-BCOS/FISCO-BCOS/projects/3](https://github.com/FISCO-BCOS/FISCO-BCOS/projects/3)
+
+**4. 跨链协作平台WeCross Task**
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/dfe84edc0adf4b21af47d2f412441559.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBARklTQ09fQkNPUw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
+更多WeCross的任务详情描述可参考：
+
+[https://github.com/WeBankBlockchain/WeCross/labels/Task-L](https://github.com/WeBankBlockchain/WeCross/labels/Task-L)
+
+[https://github.com/WeBankBlockchain/WeCross/labels/Task-M](https://github.com/WeBankBlockchain/WeCross/labels/Task-M)
+
+## 02 奖励介绍
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/8b9b9bc9945c4582a8804a6244074d0c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBARklTQ09fQkNPUw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
+
+## 03 参与流程
+
+本次活动可以个人方式参与也可组队参与，流程如下所示：
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/5ba448002ca84aeb8dace4e7094a4692.png#pic_center)
+
+**报名方式**
+
+识别下方二维码添加小助手微信：FISCOBCOS010，进入活动专属交流群。加好友时请备注：**Task挑战**
+![fb](https://user-images.githubusercontent.com/93572056/163553008-629c7779-e466-4e78-a7ac-c633c4501055.png)
+
+**领任务**
+
+在活动群中同步小助手你想参与的任务序号，完成任务领取。
+
+  **任务开发及测试**
+
+基于领取的任务，开发代码或撰写图文教程等内容，代码类任务请编写对应的测试案例和文档；图文类教程建议使用markdown语法编写。
+
+  **任务提交**
+
+完成代码开发/测试或教程撰写等内容后，即可通过PR的方式进行提交，提交时请根据开源项目选择对应路径：
+
+### 项目共建类PR提交路径：
+
+**01中间件平台WeBASE**
+
+[https://github.com/WeBankBlockchain/WeBASE-Front/pulls](https://github.com/WeBankBlockchain/WeBASE-Front/pulls)
+
+[https://github.com/WeBankBlockchain/WeBASE-Node-Manager/pulls](https://github.com/WeBankBlockchain/WeBASE-Node-Manager/pulls) 
+
+[https://github.com/WeBankBlockchain/WeBASE-Web/pulls](https://github.com/WeBankBlockchain/WeBASE-Web/pulls) 
+
+请选择community分支，提交PR
+
+**02智能合约库**
+
+[https://github.com/WeBankBlockchain/SmartDev-Contract/pulls](https://github.com/WeBankBlockchain/SmartDev-Contract/pulls)
+
+请选择dev分支，提交PR
+
+**03联盟链底层平台FISCO BCOS**
+
+[https://github.com/FISCO-BCOS/FISCO-BCOS/pulls](https://github.com/FISCO-BCOS/FISCO-BCOS/pulls)
+
+v3.0请选择dev分支，提交PR
+
+v2.0请选择dev-2.0分支，提交PR
+
+**04跨链协作平台WeCross**
+
+[https://github.com/WeBankBlockchain/WeCross/pulls](https://github.com/WeBankBlockchain/WeCross/pulls)
+
+请选择dev分支，提交PR
+
+### 技术布道类PR提交路径：
+
+**01中间件平台WeBASE**
+
+[https://github.com/WeBankBlockchain/WeBASE-Doc/tree/community/docs/WeBASE-Console-Suit/articles](https://github.com/WeBankBlockchain/WeBASE-Doc/tree/community/docs/WeBASE-Console-Suit/articles)
+
+请选择community分支，提交PR
+
+**02智能合约库/03联盟链底层平台FISCO BCOS/04跨链协作平台WeCross**
+
+[https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pulls](https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pulls)
+
+
+**代码或教程审核**
+
+各项目维护者将对大家提交的PR内容进行审核，如有问题，会在群中和开发者进行讨论，双方达成共识，且内容符合合入要求才会进入PR合入。
+
+  **PR合入**
+
+当完成代码或教程审核，由各项目维护者对PR进行合入，任务结束。
+
+## 04 项目代码仓库及文档资料
+**中间件平台WeBASE**
+
+Github代码仓库：
+
+[https://github.com/WeBankBlockchain/WeBASE](https://github.com/WeBankBlockchain/WeBASE)
+
+文档地址：
+
+[https://webasedoc.readthedocs.io/zh_CN/latest/](https://webasedoc.readthedocs.io/zh_CN/latest/)
+
+**智能合约库**
+
+Github代码仓库：
+
+[https://github.com/WeBankBlockchain/SmartDev-Contract](https://github.com/WeBankBlockchain/SmartDev-Contract)
+
+文档地址：
+
+[https://smartdev-doc.readthedocs.io/zh_CN/latest/](https://smartdev-doc.readthedocs.io/zh_CN/latest/)
+
+**联盟链底层平台FISCO BCOS**
+
+Github v2.0代码仓库：
+
+[https://github.com/FISCO-BCOS/FISCO-BCOS/tree/master-2.0](https://github.com/FISCO-BCOS/FISCO-BCOS/tree/master-2.0)
+
+Github v3.0 代码仓库：
+
+[https://github.com/FISCO-BCOS/FISCO-BCOS/releases/tag/v3.0.0-rc2](https://github.com/FISCO-BCOS/FISCO-BCOS/releases/tag/v3.0.0-rc2)
+
+FISCO BCOS v2.0技术文档：
+
+[https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/index.html](https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/index.html)
+
+FISCO BCOS v3.0技术文档：
+
+[https://fisco-bcos-doc.readthedocs.io/zh_CN/latest/](https://fisco-bcos-doc.readthedocs.io/zh_CN/latest/)
+
+ **跨链协作平台WeCross**
+
+Github代码仓库：
+
+[https://github.com/WeBankBlockchain/WeCross](https://github.com/WeBankBlockchain/WeCross)
+
+文档地址：
+
+[https://wecross.readthedocs.io/zh_CN/latest/](https://wecross.readthedocs.io/zh_CN/latest/)
+
+
+## 05 活动注意事项
+
+> 贡献的代码须遵循相应的开源协议；
+> 
+> 参与活动的代码、教程须原创；
+> 
+>项目代码符合政策和监管要求，不出现coin、token等字眼，功能层面不出现代币、Defi等场景；
+>
+>奖品将在活动结束后的15个工作日内完成发放。
+
+## 推荐阅读
+
+[如何提交PR？如何参与共建FISCO BCOS？](https://mp.weixin.qq.com/s/RjlJZZ4RwtEDV33KBEoRNQ)
