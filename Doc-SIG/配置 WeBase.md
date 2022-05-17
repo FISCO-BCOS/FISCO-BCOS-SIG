@@ -1,0 +1,112 @@
+FISCO BCOS（七）——— 配置 WeBase
+
+1、1、获取部署安装包
+
+```
+cd ~/fisco/ && wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v1.5.3/webase-deploy.zip
+```
+
+![image-20220228140132025](./img/image-20220228140132025.png)
+
+2、解压（这里注意，解压等操作，应使用普通账户，不能 sudo）
+
+```
+unzip webase-deploy.zip
+cd webase-deploy
+```
+
+![image-20220228140216748](./img/image-20220228140216748.png)
+
+3、修改 common.properties
+
+```
+vi ~/webase-deploy/common.properties
+```
+
+```
+[common]
+
+# Webase Subsystem Version (v1.1.0 or above)
+webase.web.version=v1.5.2
+webase.mgr.version=v1.5.2
+webase.sign.version=v1.5.0
+webase.front.version=v1.5.2
+
+# Mysql database configuration of WeBASE-Node-Manager
+mysql.ip=127.0.0.1
+mysql.port=3306
+mysql.user=test
+mysql.password=123456
+mysql.database=webasenodemanager
+
+# Mysql database configuration of WeBASE-Sign
+sign.mysql.ip=localhost
+sign.mysql.port=3306
+sign.mysql.user=test
+sign.mysql.password=123456
+sign.mysql.database=webasesign
+
+# H2 database name of WeBASE-Front
+front.h2.name=webasefront
+front.org=fisco
+
+# WeBASE-Web service port
+web.port=5000
+# enable WeBASE-Web overview pages for mobile phone
+# (0: disable, 1: enable)
+web.h5.enable=1
+
+# WeBASE-Node-Manager service port
+mgr.port=5001
+
+# WeBASE-Front service port
+front.port=5002
+
+# WeBASE-Sign service port
+sign.port=5004
+
+# Node listening IP
+node.listenIp=127.0.0.1
+# Node p2p service port
+node.p2pPort=30300
+# Node channel service port
+node.channelPort=20200
+# Node rpc service port
+node.rpcPort=8545
+
+# Encrypt type (0: standard, 1: guomi)
+encrypt.type=0
+# ssl encrypt type (0: standard ssl, 1: guomi ssl)
+# only guomi type support guomi ssl
+encrypt.sslType=0
+
+# Use existing chain or not (yes/no)
+if.exist.fisco=yes
+
+### if build new chain, [if.exist.fisco=no]
+# Configuration required when building a new chain
+# Fisco-bcos version
+fisco.version=2.7.2
+# Number of building nodes (default value: 2)
+node.counts=4
+
+### if using exited chain, [if.exist.fisco=yes]
+# The path of the existing chain, the path of the start_all.sh script
+# Under the path, there should be a 'sdk' directory where the SDK certificates (ca.crt, sdk.crt, node.key and gm directory(gm ssl)) are stored
+fisco.dir=/root/fisco/nodes/127.0.0.1
+# Node directory in [fisco.dir] for WeBASE-Front to connect
+# example: 'node.dir=node0' would auto change to '/data/app/nodes/127.0.0.1/node0'
+# Under the path, there is a conf directory where node certificates (ca.crt, node.crt and node.key) are stored
+node.dir=/root/fisco/nodes/127.0.0.1/node0
+```
+
+4、部署并启动所有服务
+
+```
+cd ~/webase-deploy/ && python3 deploy.py installAll
+```
+
+![image-20220303191022804](./img/image-20220303191022804.png)
+
+![image-20220303191056177](./img/image-20220303191056177.png)
+
