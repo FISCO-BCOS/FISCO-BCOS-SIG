@@ -1,2 +1,2 @@
-![image-20210910152243957](https://github.com/DingDingDeMao/FISCO-BCOS-SIG/blob/main/Doc-SIG/img/image-20210910152243957.png)
+![image-20210910152243957](https://raw.githubusercontent.com/DingDingDeMao/FISCO-BCOS-SIG/main/Doc-SIG/img/image-20210910152243957.png)
 
