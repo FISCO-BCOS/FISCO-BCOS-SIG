@@ -6,7 +6,7 @@ ubantu安装mysql5.7、
 apt install mysql-server
 ```
 
-![image-20220301214408839](./img/image-20220301214408839.png)
+![](./img/image-20220301214408839.png)
 
 2、检查版本
 
