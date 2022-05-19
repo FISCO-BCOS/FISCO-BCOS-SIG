@@ -20,8 +20,9 @@ FISCO BCOS是由金链盟开源工作组协作打造的国产联盟链底层平�
 看看就可以。这些其实都不影响你入门；阻碍你前进步子的永远是你对未知东西的恐惧，做为一个IT开发人员，探索未知领域永远是我们的必修课；学习区块链，
 需要找一个应用场景，带着这个应用场景去一步一步的深入理解其中的概念及思路会起到事半功倍的效果，闲话不多说，我们进入主题。
 
-谨记谨记：如果文档描述不清楚或错误的地方，[所有内容] 都可在[FISCO BCOS仓库](https://github.com/FISCO-BCOS) 找到答案！！！！
+谨记谨记：如果文档描述不清楚或错误的地方，所有内容都可在[FISCO BCOS仓库](https://github.com/FISCO-BCOS) 找到答案！！！！
 本手册只供新手入门
+
 ## 准备工作
 
 完全离线安装FISCO BCOS，一步一步的安装容易排查环境错误，有助于走进FISCO BCOS。
@@ -36,7 +37,7 @@ FISCO BCOS是由金链盟开源工作组协作打造的国产联盟链底层平�
 
 ### 三、下载JDK1.8及以上的linux安装包（jdk-8u321-linux-x64.tar.gz）
   * [ORACLE官网下载](https://www.oracle.com/java/technologies/downloads/) | 在下载页面Ctrl+F查找jdk-8u321-linux-x64.tar.gz
-  * [其他自行搜索下载]()
+  * 其他自行搜索下载
 
 ### 四、下载FISCO BCOS底层链安装脚本（build_chain.sh）
   * [github releases](https://github.com/FISCO-BCOS/FISCO-BCOS/releases/tag/v2.8.0)
@@ -163,16 +164,16 @@ FISCO BCOS是由金链盟开源工作组协作打造的国产联盟链底层平�
     * cp -r ~/fisco/nodes/127.0.0.1/sdk/* . #127.0.0.1根据实际情况修改，注意最后的圆点
     * cp config-example.toml config.toml
     * vi config.toml
-    * 修改 peers=["127.0.0.1:20200","127.0.0.1:20201"] #根据实际情况修改
+    * 修改 peers=\["127.0.0.1:20200","127.0.0.1:20201"\] #根据实际情况修改
     * cd ~/fisco/console
     * bash start.sh
     * 启动成功后输入 getNodeVersion，如下：
-    * [group:1]> getNodeVersion
+    * \[group:1\]> getNodeVersion
     * 输入 getPeers，如下：
-    * [group:1]> getPeers
+    * \[group:1\]> getPeers
     * 正常输出，表示安装成功
     * 输入 quit 退出控制台
-    * [group:1]> quit  # 退出控制台
+    * \[group:1\]> quit  # 退出控制台
 ## 部署智能合约
 ### 一、编写智能合约
   * 以HellWorld合约为例
@@ -198,13 +199,13 @@ FISCO BCOS是由金链盟开源工作组协作打造的国产联盟链底层平�
   * cd ~/fisco/console
   * bash start.sh
   * 控制台输入：deploy HelloWorld
-  * [group:1]> deploy HelloWorld
+  * \[group:1\]> deploy HelloWorld
   * 回车后输出类似下面内容
   * transaction hash: 0xd0305411e36d2ca9c1a4df93e761c820f0a464367b8feb9e3fa40b0f68eb23fa
   * contract address:0xb3c223fc0bf6646959f254ac4e4a7e355b50a344
   * 正常输出，表示安装成功，请记下上面输出内容
   * 输入 quit 退出控制台
-  * [group:1]> quit  # 退出控制台
+  * \[group:1\]> quit  # 退出控制台
 
 ## 调用智能合约
 ### 一、控制台调用HelloWorld合约
@@ -212,9 +213,9 @@ FISCO BCOS是由金链盟开源工作组协作打造的国产联盟链底层平�
   * cd ~/fisco/console
   * bash start.sh
   * 控制台输入： getBlockNumber
-  * [group:1]> getBlockNumber  # 查看当前块高，控制台输出当前块高
+  * \[group:1\]> getBlockNumber  # 查看当前块高，控制台输出当前块高
   * 调用HelloWorld合约的get接口获取name变量 此处的合约地址是deploy指令返回的地址（contract address）
-  * [group:1]> call HelloWorld 0xb3c223fc0bf6646959f254ac4e4a7e355b50a344 get
+  * \[group:1\]> call HelloWorld 0xb3c223fc0bf6646959f254ac4e4a7e355b50a344 get
   * 控制台输出开始
 
         ---------------------------------------------------------------------------------------------
@@ -229,9 +230,9 @@ FISCO BCOS是由金链盟开源工作组协作打造的国产联盟链底层平�
         ---------------------------------------------------------------------------------------------
   * 控制台输出结束
   * 重新查看当前块高，块高不变，因为get接口不更改账本状态
-  * [group:1]> getBlockNumber
+  * \[group:1\]> getBlockNumber
   * 调用HelloWorld合约的set设置name
-  * [group:1]> call HelloWorld 0xb3c223fc0bf6646959f254ac4e4a7e355b50a344 set "Hello, FISCO BCOS!"
+  * \[group:1\]> call HelloWorld 0xb3c223fc0bf6646959f254ac4e4a7e355b50a344 set "Hello, FISCO BCOS!"
   * 控制台输出开始
 
         transaction hash: 0x7e742c44091e0d6e4e1df666d957d123116622ab90b718699ce50f54ed791f6e
@@ -247,9 +248,9 @@ FISCO BCOS是由金链盟开源工作组协作打造的国产联盟链底层平�
         Event: {}
   * 控制台输出结束
   * 再次查看当前块高，块高增加表示已出块，账本状态已更改
-  * [group:1]> getBlockNumber
+  * \[group:1\]> getBlockNumber
   * 调用HelloWorld合约的get接口获取name变量 此处的合约地址是deploy指令返回的地址（contract address）
-  * [group:1]> call HelloWorld 0xb3c223fc0bf6646959f254ac4e4a7e355b50a344 get
+  * \[group:1\]> call HelloWorld 0xb3c223fc0bf6646959f254ac4e4a7e355b50a344 get
   * 控制台输出开始
 
         ---------------------------------------------------------------------------------------------
@@ -265,7 +266,7 @@ FISCO BCOS是由金链盟开源工作组协作打造的国产联盟链底层平�
   * 控制台输出结束
   * 正常输出，表示调用成功
   * 输入 quit 退出控制台
-  * [group:1]> quit  # 退出控制台
+  * \[group:1\]> quit  # 退出控制台
 ### 二、JAVA SDK 调用智能合约
 * 1、创建maven项目
   * 采用Spring Boot2.4.2 + JDK1.8 + fisco-bcos-java-sdk2.8.0搭建项目
@@ -297,8 +298,8 @@ FISCO BCOS是由金链盟开源工作组协作打造的国产联盟链底层平�
                       <map>
                           <entry key="peers">
                               <list>
-                                  <value>192.168.0.90:20200</value>
-                                  <value>192.168.0.90:20201</value>
+                                  <value>127.0.0.1:20200</value>
+                                  <value>127.0.0.1:20201</value>
                               </list>
                           </entry>
                       </map>
