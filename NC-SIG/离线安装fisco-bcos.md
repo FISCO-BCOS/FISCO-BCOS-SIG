@@ -55,7 +55,7 @@ FISCO BCOS是由金链盟开源工作组协作打造的国产联盟链底层平�
   * [github releases](https://github.com/FISCO-BCOS/console/releases/tag/v2.8.0)
   * [github下载console.tar.gz](https://github.com/FISCO-BCOS/console/releases/download/v2.8.0/console.tar.gz)
   * [gitee releases](https://gitee.com/FISCO-BCOS/console/releases/v2.8.0)
-  * [gitee下载console.tar.gz](https://gitee.com/FISCO-BCOS/console/attach_files/812963/download/console.tar.gz)
+  * gitee下载console.tar.gz 下载地址：https://gitee.com/FISCO-BCOS/console/attach_files/812963/download/console.tar.gz
 
 ## 安装FISCO BCOS
 
