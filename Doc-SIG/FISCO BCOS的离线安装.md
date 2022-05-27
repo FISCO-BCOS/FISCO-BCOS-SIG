@@ -1,8 +1,9 @@
 # FISCO BCOS离线安装
 
-1、需要在github上下载如下压缩包和脚本
+1、需要下载如下压缩包和脚本
 
-![image-20220309075909180](./img/image-20220309075909180.png)
+链接：https://pan.baidu.com/s/17ZAImI0ttCjfjyJmgQ1WMw?pwd=rk3k 
+		提取码：rk3k 
 
 2、将压缩包和脚本上传至当前用户home目录下
 
@@ -65,8 +66,5 @@ root@wyg-virtual-machine:~/fisco/webase-front# bash start.sh
 
 
 
-11、离线安装包下载地址
 
-链接：https://pan.baidu.com/s/17ZAImI0ttCjfjyJmgQ1WMw?pwd=rk3k 
-		提取码：rk3k 
 
