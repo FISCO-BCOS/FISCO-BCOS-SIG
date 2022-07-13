@@ -60,6 +60,7 @@ FISCO BCOS上贸大专项兴趣小组由来自不同高校的学生和老师组�
 | 陈俊锋   | 北京航空航天大学直博四年级                                   | 后端工程师       | web前端（js，react）/go，共识算法，智能合约，Rust            | https://github.com/1970186643                                |
 | 林佳豪   | 东华理工大学 软件工程专业大三                                | 前端工程师       | 前端开发/小程序开发                                          | https://github.com/1970186643                                |
 | 黄杰     | 武汉学院软件工程专业                                         | 学生             | GO/Solidity                                                  | https://github.com/Blockchain-Key                            |
+| 江会文   | 江西师范大学                                                 | 学生             | Go/C/C++/Python/Solidity                                     | https://github.com/Jay1213811                                |
 
 ## **加入小组**
 
