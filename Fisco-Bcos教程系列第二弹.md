@@ -44,8 +44,7 @@ sudo mysql -uroot -p
 use mysql;
 select User,Host,Plugin,authentication_string from user;
 ```
-
-![这里是已经修改过的，一般8.0版本默认此时的root下的Plugin是sha256的加密验证，我们要修改成图中的native](https://img-blog.csdnimg.cn/8a610a048979449b951dec18d731e207.png)
+![1661562801810](https://user-images.githubusercontent.com/102428352/187008560-f67a9db2-21be-42b4-bd52-be095c899fe7.jpg)
 
 ```sql
 #先无脑刷新一波
@@ -71,4 +70,4 @@ systemctl restart mysql;
 mysql -uroot -p
 #输入密码,成功登录.
 ```
-![远程主机和虚拟机都连接成功](D:\administered\Documents\微服务学习\img\13390be83fa04b3887eda9e3ae2ca719.png)
+![13390be83fa04b3887eda9e3ae2ca719](https://user-images.githubusercontent.com/102428352/187008602-3586e832-3e85-4ca6-b8ea-98081e10ac81.png)
