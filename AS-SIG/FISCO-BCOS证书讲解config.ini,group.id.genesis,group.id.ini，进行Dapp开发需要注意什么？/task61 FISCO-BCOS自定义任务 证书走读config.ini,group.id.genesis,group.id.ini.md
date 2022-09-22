@@ -1,4 +1,4 @@
-# ​FISCO-BCOS证书讲解config.ini,group.id.genesis,group.id.ini，进行Dapp开发需要注意什么？
+# task61 FISCO-BCOS自定义任务 证书走读config.ini,group.id.genesis,group.id.ini
 作者 重庆电子工程职业学院 | 向键雄
 ## 前言
 FISCO-BCOS是联盟链，一说到联盟链就少不了证书的存在，无论是节点证书还是加密证书都有着重要的作用，这一节我们就简单的讲一下FISCO-BCOS中的证书
