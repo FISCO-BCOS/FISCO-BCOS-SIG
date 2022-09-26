@@ -36,7 +36,7 @@ Compiling error:
 docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?.
 See 'docker run --help'.
 
-2022.09.20-02:58:19.973 error [caliper] [installSmartContract.js] 	Depolying error: undefined
+2022.09.20-02:58:19.973 error [caliper] [installSmartContract.js] 	Deploying error: undefined
 2022.09.20-02:58:19.973 error [caliper] [installSmartContract.js] 	Failed to install smart contract helloworld, path=/home/fisco/benchmarks/caliper-benchmarks/src/fisco-bcos/helloworld/HelloWorld.sol
 
 ```
@@ -147,7 +147,7 @@ source ~/.$(basename $SHELL)rc
 
 这个报错也是在hello world中遇到的
 
-2022.09.20-02:52:38.309 error [caliper] [installSmartContract.js] 	Depolying error: undefined
+2022.09.20-02:52:38.309 error [caliper] [installSmartContract.js] 	Deploying error: undefined
 2022.09.20-02:52:38.310 error [caliper] [installSmartContract.js] 	Failed to install smart contract helloworld, path=/home/fisco/benchmarks/caliper-benchmarks/src/fisco-bcos/helloworld/HelloWorld.sol
 这个就是我们没有下载启动docker，需要启动docker服务与下载docker服务并运行才可以
 
