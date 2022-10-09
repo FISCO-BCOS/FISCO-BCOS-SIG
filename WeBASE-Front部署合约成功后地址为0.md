@@ -12,9 +12,9 @@
 
 为了方便讲解，简写了造成该情况的代码，从图片能够看出部署成功后的合约地址的确是0x00000...，应该是WeBASE中间件代码的错误造成的（下面会说为什么下这个结论）。
 
-![image-20221009162813966](/home/devon/.config/Typora/typora-user-images/image-20221009162813966.png)
+![图片](https://user-images.githubusercontent.com/85018486/194747000-56acaf21-bffb-41f9-a894-a40e6306f95e.png)
 
-![image-20221009162844841](/home/devon/.config/Typora/typora-user-images/image-20221009162844841.png)
+![图片](https://user-images.githubusercontent.com/85018486/194747035-a1237d98-dadf-46a8-aeb1-8483e85b443a.png)
 
 ### 出现原因
 
@@ -24,7 +24,7 @@
 
 由下图可得知应该是WeBASE中间件代码的问题。
 
-![image-20221009163437404](/home/devon/.config/Typora/typora-user-images/image-20221009163437404.png)
+![图片](https://user-images.githubusercontent.com/85018486/194747052-b086d4de-a0f9-4b72-aa18-60a05f3ee34f.png)
 
 ### 建议
 
