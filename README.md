@@ -22,6 +22,8 @@ SIG有明确的任务目标和协作规范。组内成员深度交流、开放�
 
 - [SC-SIG ：智能合约兴趣小组（Smart contract Special Interest Group @FISCO BCOS）](./SC-SIG/README.md)
 
+- [MMIFB-SIG ：基于FISCO BCOS产业链改兴趣小组（Move Mainstream Industry to FISCO BCOS Special Interest Group）](./MMIFB-SIG/README.md)
+
 
 ## **SIG工作方向**
 
