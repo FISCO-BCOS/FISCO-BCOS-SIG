@@ -34,6 +34,7 @@ FISCO BCOS节点架构与存储专项小组（Architecture and Storage Special I
 | 郭锐 | FISCO BCOS | WeCross/FISCO BCOS核心开发者 | 跨链开发，区块链底层开发，docker容器，c++/Java/Vue.js/shell/python | https://github.com/kyonRay |
 
 
+
 ## 小组会议
 
 小组成员根据实际需求组织会议，包括但不限于技术分享、方案讨论、代码Review等。
