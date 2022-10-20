@@ -22,6 +22,8 @@ SIG有明确的任务目标和协作规范。组内成员深度交流、开放�
 
 - [SC-SIG ：智能合约兴趣小组（Smart contract Special Interest Group @FISCO BCOS）](./SC-SIG/README.md)
 
+- [MMIFB-SIG ：基于FISCO BCOS产业链改兴趣小组（Move Mainstream Industry to FISCO BCOS Special Interest Group）](./MMIFB-SIG/README.md)
+
 
 ## **SIG工作方向**
 
@@ -100,6 +102,287 @@ SIG采用“申请制”。 当你想成立一个SIG时，请填写[申请表单
 ## **附件**
 
 - [FISCO BCOS专项兴趣小组章程模板](https://share.weiyun.com/CPEr7sv8)
+
+
+## 【“码”力全开，“章”显实力】2022年第1季Task挑战赛贡献者榜单
+
+通过区块链技术及智能合约实现石头剪刀布的游戏玩法，解决双方遇到分歧的场景，让一方说服另一方；从0开始构建WeCross Go-SDK，以方便社区开发者通过Go-SDK实现UBI接口的快速调用；一系列FISCO BCOS、WeBASE的实操教程，教你快速上手区块链开发……
+
+近期，2022年第1季Task挑战赛完美收官，本次活动面向社区征集代码及教程，激励更多开发者参与到FISCO BCOS开源项目及周边组件共建中，涌现了众多兼具创意与实用的代码，过程中的研发心得也沉淀为一篇篇详实的教程。让我们一起看看本次活动的贡献者榜单及贡献内容吧！
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/a4c154c8b9a947d2ae051901839d78e8.png#pic_center)
+## 最佳项目共建贡献者
+
+**yekai1003**  
+
+**贡献者简介：**
+
+高野，京北方信息技术股份有限公司高级架构师，《Go语言区块链应用开发从入门到精通》作者、FISCO BCOS开源社区MVP。
+
+**PR简介：**
+
+【PR编号#79】通过区块链技术实现石头剪刀布的游戏，提前将双方要出的结果写到合约内，以保障双方玩石头剪刀布游戏结果的公平性；
+【PR编号#85】撰写了Solidity进阶版开发教程，内容详实，图文并茂，为智能合约项目共建做出了重要贡献。
+
+**PR链接：**
+
+[https://github.com/WeBankBlockchain/SmartDev-Contract/pull/79](https://github.com/WeBankBlockchain/SmartDev-Contract/pull/79)
+
+[https://github.com/WeBankBlockchain/SmartDev-Contract/pull/85](https://github.com/WeBankBlockchain/SmartDev-Contract/pull/85)
+
+## 最佳技术布道贡献者
+
+**leo201313**  
+
+**贡献者简介：**
+
+曹明锐，北京邮电大学，擅长go语言，研究方向为区块链共识与分布式系统。
+
+**PR简介：**
+
+【PR编号#543、#173、#134、#76】为WeCross新增了默认链账户功能，解决了同时跨多条Fabric链时需要频繁手动切换账户的问题，并提供详细文档供开发者查阅；
+
+【PR编号#169、#170】基于WeCross已有的示例合约逻辑，在另一条链上进行了相应的功能实现，补全了Chaincode，Solidity的版本，为开发者提供有用的参考。
+
+**PR链接：**
+
+[https://github.com/WeBankBlockchain/WeCross/pull/543](https://github.com/WeBankBlockchain/WeCross/pull/543)
+
+[https://github.com/WeBankBlockchain/WeCross-Console/pull/173](https://github.com/WeBankBlockchain/WeCross-Console/pull/173)
+
+[https://github.com/WeBankBlockchain/WeCross-Java-SDK/pull/134](https://github.com/WeBankBlockchain/WeCross-Java-SDK/pull/134)
+
+[https://github.com/WeBankBlockchain/WeCross-Account-Manager/pull/76](https://github.com/WeBankBlockchain/WeCross-Account-Manager/pull/76)
+
+[https://github.com/WeBankBlockchain/WeCross-Console/pull/169](https://github.com/WeBankBlockchain/WeCross-Console/pull/169)
+
+[https://github.com/WeBankBlockchain/WeCross-Console/pull/170](https://github.com/WeBankBlockchain/WeCross-Console/pull/170)
+
+
+## 优秀项目共建贡献者
+
+**Robin**  
+
+**贡献者简介：**
+
+柳贵，社区开发者，一位持续学习中的Gopher，FISCO BCOS开源社区MVP。
+
+**PR简介：**
+
+从0开始开发WeCross-Go-SDK，该SDK完成后，社区开发者可通过Go-SDK实现UBI接口的快速调用；目前SDK开发进行中，已完成部分模块，欢迎更多社区开发者一起共建。
+
+**PR链接：**
+
+[https://github.com/WeBankBlockchain/WeCross-Go-SDK/pull/1](https://github.com/WeBankBlockchain/WeCross-Go-SDK/pull/1)
+
+**Skkypy**  
+
+**贡献者简介：**
+
+孔令杰，北京思原帕斯信息技术有限公司，对区块链中间件技术感兴趣。
+
+**PR简介：**
+
+【PR编号#79】实现了WeBASE-Data对Solidity v0.6.10版本的支持；
+
+【PR编号#457】结合WeBASE各子系统进行代码走读与分析，教程条理清晰，通俗易懂；
+
+【PR编号#774】修复WeBASE-Front交易中参数校验的问题。
+
+**PR链接：**
+
+[https://github.com/WeBankBlockchain/WeBASE-Data/pull/79](https://github.com/WeBankBlockchain/WeBASE-Data/pull/79)
+
+[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/457](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/457)
+
+[https://github.com/WeBankBlockchain/WeBASE-Front/pull/774](https://github.com/WeBankBlockchain/WeBASE-Front/pull/774)
+
+**itherunder** 
+
+**贡献者简介：**
+
+电子科技大学学生。
+
+**PR简介：**
+
+为智能合约库贡献函数调用合约，可帮助开发者监听某个函数调用。
+
+**PR链接：**
+
+[https://github.com/WeBankBlockchain/SmartDev-Contract/pull/80](https://github.com/WeBankBlockchain/SmartDev-Contract/pull/80)
+
+**JqLiu123**    
+
+**贡献者简介：**
+
+刘建起，山东理工大学学生，擅长智能合约开发。 
+
+**PR简介：**
+
+为智能合约库贡献匿名投票合约，实现了匿名且安全的多方投票，可以为一些业务场景带来启发。
+
+**PR链接：**
+
+[https://github.com/WeBankBlockchain/SmartDev-Contract/pull/86](https://github.com/WeBankBlockchain/SmartDev-Contract/pull/86)
+
+**dorname**  
+
+**贡献者简介：**
+
+北京机械工业自动化研究所有限公司，李广桥，擅长ExtJs前端框架，对分布式应用、区块链应用及原理感兴趣。
+
+**PR简介：**
+
+贡献WeBASE开发教程，帮助开发者知晓如何通过WeBASE导出的Java脚手架实现动态设置私钥发起交易的功能。
+
+**PR链接：**
+
+[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/449](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/449)
+
+## 优秀技术布道贡献者
+
+**CN-GaoXuLiang**  
+
+**贡献者简介：**
+
+高旭亮，深圳职业技术学院学生，擅长Java编程，Web开发，曾获得广东省职业院校区块链大赛一等奖及一带一路暨金砖区块链赛项国内赛一等奖。
+
+**PR简介：**
+
+【PR编号#745】丰富了WeBASE-Front中Tool接口的功能，新增明文私钥格式转换功能，简洁高效；
+
+【PR编号#425】贡献调用WeBASE接口进行功能开发的项目Demo与教程；
+
+【PR编号#429】贡献通过WeBASE完成构造和发交易两个步骤的代码Demo与教程；
+
+【PR编号#437】贡献调用WeBASE-Front的Tool接口进行链上交易解析的示例与教程。
+
+**PR链接：**
+
+[https://github.com/WeBankBlockchain/WeBASE-Front/pull/745](https://github.com/WeBankBlockchain/WeBASE-Front/pull/745)
+
+[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/425](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/425)
+
+[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/429](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/429)
+
+[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/437](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/437)
+
+**zzibc**   
+
+**贡献者简介：**
+
+冯佳乐 ，上海众恒软件技术有限公司，10年的软件开发经验，擅长Java技术开发、政务服务领域的项目研发和实施，目前主要负责公司政务项目的研发和实施工作。   
+
+**PR简介：**
+
+【PR编号#447】通过图文教程讲解了搭链、合约创建、WeBASE部署合约的全操作过程，十分适合初学者入门阅读；
+
+【PR编号#59】介绍了Java-SDK + FISCO BCOS + Spring-Boot构建区块链应用的流程，对于初学者入门区块链有一定的参考意义。
+
+**PR链接：**
+
+[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/447](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/447)
+
+[https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/59](https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/59)
+
+**Const123456**  
+
+**贡献者简介：**
+
+符博，深圳职业技术学院学生，擅长使用Java主流框架进行后端开发，对前端主流的开发技术、框架基本了解。
+
+**PR简介：**
+
+通过合约代码+Java代码+图文教程讲解了通过WeBASE发起一笔交易的开发过程，很细致。
+
+**PR链接：**
+
+[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/427](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/427)
+
+**1824461877**  
+
+**贡献者简介：**
+
+陈钦宇，深圳职业技术学院学生，对区块链底层架构具有一定见解。
+
+**PR简介：**
+
+通过详细的图文教程阐述了WeBASE交易的整体流程，对于初学者熟悉交易过程有一定的参考意义。
+
+**PR链接：**
+
+[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/435](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/435)
+
+**liwh1227**  
+
+**贡献者简介：**
+
+李炜航，数金公共服务（青岛）有限公司，在区块链领域有丰富实践，专注区块链场景落地、数字金融等领域的研究。
+
+**PR简介：**
+
+【PR编号#62】贡献1篇FISCO BCOS 教程，详细讲解了基于docker在Deepin操作系统部署/启动 FISCO BCOS Air版本区块链的详细流程；
+
+【PR编号#458】贡献１篇ＷeBASE教程，结合图文文档+代码详细讲解了构造WeBASE-Front镜像并部署的完整流程。
+
+**PR链接：**
+
+[https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/62](https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/62)
+
+[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/458](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/458)
+
+## 新Show贡献者
+
+*按Github账号首字母排序
+
+**GitHub账号** |**姓名**|**所在机构** |**PR链接**
+| - | - |- |- |
+carpONE	|	梁永豪	|	广东机电职业技术学院 | [https://github.com/WeBankBlockchain/WeBASE-Doc/pull/446](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/446)
+DingDingDeMao	|  吴永刚	| 重庆城市职业学院	| [https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/60](https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/60)
+ethshan	| 单志刚	|  数金公共服务（青岛）有限公司 | 	[https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/62](https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/62)
+Ferwoo	| 吴飞	| 社区开发者|	[https://github.com/WeBankBlockchain/SmartDev-Contract/pull/84](https://github.com/WeBankBlockchain/SmartDev-Contract/pull/84)
+git-jacky-man |	赖泽沐	 |青岛东软载波科技股份有限公司 |	[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/434/](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/434/)
+loserpeople |	麦立健	 |深圳职业技术学院	 |[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/431](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/431)
+kimroniny	 |郭仪 |	中国科学院大学	 |[https://github.com/WeBankBlockchain/SmartDev-Contract/pull/82](https://github.com/WeBankBlockchain/SmartDev-Contract/pull/82)
+Kesling515 |	林霖	 |广东药科大学	 |[https://github.com/WeBankBlockchain/SmartDev-Contract/pull/81](https://github.com/WeBankBlockchain/SmartDev-Contract/pull/81)
+mawl01 |	马维龙	 |神州数码方圆科技有限公司	 |[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/455](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/455)
+ttlcom|	张云龙	 |西部电子商务股份有限公司 	 |[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/453](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/453)
+WriteRaven |	Paul |	社区开发者	 |[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/451](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/451)
+wzl521 |	武志立	|中原工学院|	[https://github.com/WeBankBlockchain/SmartDev-Contract/pull/83](https://github.com/WeBankBlockchain/SmartDev-Contract/pull/83)
+
+## 参与贡献者
+
+**GitHub账号** |**姓名**|**所在机构** |**PR链接**
+| - | - |- |- |
+oryxJeek	|	林森		|社区开发者	|	[https://github.com/WeBankBlockchain/WeCross-Doc/pull/206](https://github.com/WeBankBlockchain/WeCross-Doc/pull/206)
+99Kies		|汤会枫		|湖州学院		|[https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/58](https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/58) [https://github.com/WeBankBlockchain/WeBASE-Doc/pull/448](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/448)
+
+## 早鸟贡献者
+
+*按提交PR的时间先后顺序排列
+
+**GitHub账号** |**姓名**|**所在机构** |**PR链接**
+| - | - |- |- |
+CN-GaoXuLiang	 |高旭亮 |	深圳职业技术学院  |	[https://github.com/WeBankBlockchain/WeBASE-Front/pull/745](https://github.com/WeBankBlockchain/WeBASE-Front/pull/745) [https://github.com/WeBankBlockchain/WeBASE-Doc/pull/425/](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/425/) [https://github.com/WeBankBlockchain/WeBASE-Doc/pull/429/](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/429/) [https://github.com/WeBankBlockchain/WeBASE-Doc/pull/437](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/437)
+Robin |	柳贵	 |社区开发者 |	[https://github.com/WeBankBlockchain/WeCross-Go-SDK/pull/1](https://github.com/WeBankBlockchain/WeCross-Go-SDK/pull/1)
+itherunder |	学生	 |电子科技大学 |	[https://github.com/WeBankBlockchain/SmartDev-Contract/pull/80](https://github.com/WeBankBlockchain/SmartDev-Contract/pull/80)
+yekai1003 |	高野	 |京北方信息技术股份有限公司 |	[https://github.com/WeBankBlockchain/SmartDev-Contract/pull/79](https://github.com/WeBankBlockchain/SmartDev-Contract/pull/79) [https://github.com/WeBankBlockchain/SmartDev-Contract/pull/85](https://github.com/WeBankBlockchain/SmartDev-Contract/pull/85)
+Const123456 |	符博	 |深圳职业技术学院	 |[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/427](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/427)
+loserpeople |	麦立健	 |深圳职业技术学院  |	[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/431](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/431)
+1824461877 |	陈钦宇 |	深圳职业技术学院  |	[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/435](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/435)
+git-jacky-man |	赖泽沐 |	青岛东软载波科技股份有限公司 |	[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/434/](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/434/)
+leo201313	 |曹明锐	 |北京邮电大学 |	[https://github.com/WeBankBlockchain/WeCross/pull/543](https://github.com/WeBankBlockchain/WeCross/pull/543)  [https://github.com/WeBankBlockchain/WeCross-Console/pull/173](https://github.com/WeBankBlockchain/WeCross-Console/pull/173) [https://github.com/WeBankBlockchain/WeCross-Java-SDK/pull/134](https://github.com/WeBankBlockchain/WeCross-Java-SDK/pull/134) [https://github.com/WeBankBlockchain/WeCross-Account-Manager/pull/76](https://github.com/WeBankBlockchain/WeCross-Account-Manager/pull/76) [https://github.com/WeBankBlockchain/WeCross-Console/pull/169](https://github.com/WeBankBlockchain/WeCross-Console/pull/169) [https://github.com/WeBankBlockchain/WeCross-Console/pull/170](https://github.com/WeBankBlockchain/WeCross-Console/pull/170)
+oryxJeek	 |林森	 |社区开发者 |	[https://github.com/WeBankBlockchain/WeCross-Doc/pull/206](https://github.com/WeBankBlockchain/WeCross-Doc/pull/206)
+carpONE	 |梁永豪	 |广东机电职业技术学院 |	[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/446](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/446)
+zzibc	 |冯佳乐 |	上海众恒软件技术有限公司 |	[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/447](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/447)  [https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/59](https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/59)        [https://github.com/FISCO-BCOS/FISCO-BCOS/pull/2455](https://github.com/FISCO-BCOS/FISCO-BCOS/pull/2455)
+DingDingDeMao	 |吴永刚	 |重庆城市职业学院 |	[https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/60](https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/60)
+99Kies	 |汤会枫	 |湖州学院	 |[https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/58](https://github.com/FISCO-BCOS/FISCO-BCOS-SIG/pull/58) [https://github.com/WeBankBlockchain/WeBASE-Doc/pull/448](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/448)
+WriteRaven	 |Paul	 |社区开发者 |	[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/451](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/451)
+dorname	 |李广桥	 |北京机械工业自动化研究所有限公司 |	[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/449](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/449)
+ttlcom	 |张云龙 |	西部电子商务股份有限公司 |	[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/453](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/453)
+Kesling515	 |林霖	 |广东药科大学 |	[https://github.com/WeBankBlockchain/SmartDev-Contract/pull/81](https://github.com/WeBankBlockchain/SmartDev-Contract/pull/81)
+mawl01 |	马维龙	 |神州数码方圆科技有限公司 |	[https://github.com/WeBankBlockchain/WeBASE-Doc/pull/455](https://github.com/WeBankBlockchain/WeBASE-Doc/pull/455)
+kimroniny	 |郭仪	 |中国科学院大学 |	[https://github.com/WeBankBlockchain/SmartDev-Contract/pull/82](https://github.com/WeBankBlockchain/SmartDev-Contract/pull/82)
 
 ## **社区Task挑战赛开启，阶梯式任务等你来战** 
 
