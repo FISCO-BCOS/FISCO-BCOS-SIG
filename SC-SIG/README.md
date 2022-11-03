@@ -28,6 +28,7 @@ FISCO BCOS智能合约兴趣小组（Smart contract Special Interest Group @FISC
 | 高野 | 京北方 | 区块链应用研发、授课 | solidity,Golang,C | https://github.com/yekai1003 |
 | 王炯 | 中兴协力（山东）教育科技集团有限公司 | 区块链产品经理  | go,python,solidity | https://github.com/LunaWang5209  |
 | 罗志达 | 一航网络 | Golang开发工程师  | go,python,solidity | https://github.com/EHangnet |
+| 鄢港澳 | 武汉理工大学 | 信息与通信工程在读  | go,python | https://gitee.com/yangangao |
 
 ## 加入小组
 
