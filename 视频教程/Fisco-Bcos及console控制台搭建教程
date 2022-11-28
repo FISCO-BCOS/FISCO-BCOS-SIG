@@ -1,0 +1,14 @@
+摘要：
+第一步. 安装依赖
+第二步. 创建操作目录, 下载安装脚本
+第三步. 搭建单群组4节点联盟链
+第四步. 启动FISCO BCOS链
+第五步. 检查进程
+第六步. 检查日志输出
+
+
+视频参见：
+https://www.bilibili.com/video/BV1fW4y1h7pa/?spm_id_from=333.337.search-card.all.click
+
+文章参见：
+https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/installation.html
