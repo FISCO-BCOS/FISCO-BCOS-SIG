@@ -24,6 +24,7 @@ PPC-SIG(Precompiled contract Special Interest Group) 章程
 毛佰虬| 诚毅科技软件 | 组员 | 区块链底层开发，C/C++/go | 
 杨克平 | 世纪鼎利 | 组员 | 后台应用开发，C++/python | 
 陈昂| 博智林机器人|组员| 机器人底层开发，C++/java | 
+许强| geely | 研发 | 区块链底层 rust/python |
 <!--EndFragment-->
 </body>
 </html>
