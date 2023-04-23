@@ -123,6 +123,7 @@ CastTest.abi          Goods.abi             IUserAuthoriz
 src/main/java/org/fisco/bcos/trace/contract
 resources/contract/abi    --可省略
 resources/contract/bin    --可省略
+
 ![image](./img/1-2-1-Image.png) ![image](./img/1-2-2-Image.png)
 
 
@@ -167,7 +168,7 @@ public static class IBatchCode.BatchCodeData extends DynamicStruct {
 ```
 #### 4 加载用户私钥
 发起交易需要指定用户私钥，可以从webase-web平台--“私钥管理”导出用户私钥pem文件，再添加到代码工程account目录中：
-[1](./img/1-4-1-Image.png)
+![image](./img/1-4-1-Image.png)
 加载用户私钥文件：
 ```
 public void loadUserAccount(String filePath){
