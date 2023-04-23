@@ -124,7 +124,7 @@ src/main/java/org/fisco/bcos/trace/contract
 resources/contract/abi    --可省略
 resources/contract/bin    --可省略
 
-[1](./img/1-2-1-Image.png) [2](./img/1-2-2-Image.png)
+./img/1-2-1-Image.png [2](./img/1-2-2-Image.png)
 
 
 #### 3 对于接口文件中的结构体类型修正
