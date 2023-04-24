@@ -1,4 +1,4 @@
-## Fiscobcos发起交易方法2--节点RPC接口调用
+## Fiscobcos发起交易方法1--智能合约生成Java类调用
 
 #### 环境： solidity 0.8.0， fisco节点 V3.2,  java SDK V3.2, WeBASE V3.0.2
 
@@ -264,7 +264,7 @@ public IBatchCode.BatchCodeData getOne(String goodsId, BigInteger index) throws
 ```
 
 **发起异步交易**
-流程：首先发起交易，得到交易hash。然后通过回调函数对象等待链上交易返回值。
+流程：首先发起交易，得到交易hash。然后通过回调函数对象等待链上交易返回值。 
 参考文章：https://fisco-bcos-doc.readthedocs.io/zh_CN/latest/docs/sdk/java_sdk/assemble_transaction.html  
 4.1 定义回调类
 ```
