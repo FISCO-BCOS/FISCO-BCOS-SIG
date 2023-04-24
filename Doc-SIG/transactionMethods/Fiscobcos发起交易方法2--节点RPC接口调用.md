@@ -79,11 +79,14 @@ root@tom:/fiscoV3.2/nodes/127.0.0.1#
 ```
 #### 3 Postman中启动SSL证书
 打开 postman，进入系统设置 settings，
+
 （1）在 general 中关闭 ssl 检查，
 ![image](./img/2-3-1-Image.png)
+
 （2）再进入 certificates 进行配置
 ![image](./img/2-3-2-Image.png)
 ![image](./img/2-3-3-Image.png)
+
 （3）试验命令，连接node3节点查询区块高度成功。
 ![image](./img/2-3-4-Image.png)
 
