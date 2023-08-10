@@ -18,6 +18,8 @@ Air版本FISCO BCOS采用all-in-one的封装模式，将所有模块编译成一
 
 ### build_chain 2.X 版本的help
 
+![](https://img-blog.csdnimg.cn/348874a170104832af102082f08ff44a.png)
+
 |参数  |功能|
 |----|---|
 |-l<IP list>[必需]	|“ip1:nodeNum1，ip2:nodeNum2”例如：“192.168.0.1:2192.168.0.2:3”
@@ -53,7 +55,7 @@ Air版本FISCO BCOS采用all-in-one的封装模式，将所有模块编译成一
 
 ### build_chain 3.X 版本的help
 
-
+![](https://img-blog.csdnimg.cn/b0c97ba2cfbc448996a95915bce9c712.png)
 
 |参数  |功能|
 |-|-|
@@ -93,13 +95,13 @@ Air版本FISCO BCOS采用all-in-one的封装模式，将所有模块编译成一
 ```
 bash ../tools/build_chain.sh -p 30300,20200 -l 127.0.0.1:4 -o nodes
 ```
-
+![](https://img-blog.csdnimg.cn/73510a575b4a4b1583b8e0fcebb3b118.png)
 
 ### V2.0起链
 ```
 bash ../tools/build_chain.sh -l 127.0.0.1:4 -p 30300,20200,8545 -o nodes
 ```
-
+![](https://img-blog.csdnimg.cn/45568f09b9434bb4806a4923d9ca8e08.png)
 
 ### 返回消息对比
 与2.0相比起链少了一个指定的8545的端口，默认的起链命令倒是没什么变化
@@ -378,8 +380,9 @@ addObserver
 addSealer
 
 ```
+![](https://img-blog.csdnimg.cn/0ebb04ba9f5c44de8a3d996146cb2fd7.png)
 
-
+![](https://img-blog.csdnimg.cn/45568f09b9434bb4806a4923d9ca8e08.png)
 
 ```
 
