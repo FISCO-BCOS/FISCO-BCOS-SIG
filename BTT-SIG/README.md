@@ -62,6 +62,8 @@
 ### 下列为小组成员在社区贡献的部分PR合集
 ![image](https://user-images.githubusercontent.com/103564714/204477469-01d87fac-374c-47b6-bef9-7163cb89a15b.png)
 
+### 直播分享回顾:
+- 探析区块链中的密码学与隐私计算：https://vlilm.h5.xeknow.com/sl/4bEzoy
 
 
 
