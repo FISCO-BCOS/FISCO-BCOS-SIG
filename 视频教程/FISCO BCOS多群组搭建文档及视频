@@ -1,0 +1,139 @@
+视频地址：https://www.bilibili.com/video/BV1re41137ja/?spm_id_from=333.999.0.0
+作者其他fiscobcos视频:https://space.bilibili.com/492684632?spm_id_from=333.788.0.0
+
+# FISCO BCOS（二十）———FISCO BCOS多群组搭建
+
+1、创建文件夹
+
+```
+#创建目录
+root@wyg-virtual-machine:~# mkdir fisco
+```
+
+2、创建配置文件
+
+```
+root@wyg-virtual-machine:~/fisco# vim ipconf
+```
+
+3、建链
+
+```
+root@wyg-virtual-machine:~/fisco# bash build_chain.sh  -f ipconf -p 30300,20200,8545
+```
+
+4、启动节点
+
+```
+root@wyg-virtual-machine:~/fisco/nodes/127.0.0.1# bash start_all.sh
+```
+
+5、查看节点进程
+
+```
+root@wyg-virtual-machine:~/fisco/nodes/127.0.0.1# ps -ef | grep fisco-bcos
+```
+
+6、检查节点数
+
+```
+root@wyg-virtual-machine:~/fisco/nodes/127.0.0.1# tail -f node0/log/* | grep connected
+```
+
+7、检查节点共识
+
+```
+root@wyg-virtual-machine:~/fisco/nodes/127.0.0.1# tail -f node0/log/* | grep +++
+```
+
+8、回到fisco目录
+
+```
+cd ~/fisco
+```
+
+9、进入控制台操作目录
+
+```
+cd console
+```
+
+10、拷贝group2节点证书到控制台配置目录
+
+```
+root@wyg-virtual-machine:~/fisco/console# cp -r ../../fisco/nodes/127.0.0.1/sdk/* conf/
+```
+
+
+11、获取通道监听端口
+
+```
+grep "channel_listen_port" ~/fisco/nodes/127.0.0.1/node*/config.ini
+```
+
+
+
+12、拷贝控制台配置
+
+```
+root@wyg-virtual-machine:~/fisco/console/conf# cp config-example.toml ./config.toml
+```
+
+13、启动控制台
+
+```
+root@wyg-virtual-machine:~/fisco/console# bash start.sh
+```
+
+14、向group1发交易
+
+多群组架构中，群组间账本相互独立，向某个群组发交易仅会导致本群组区块高度增加，不会增加其他群组区块高度
+
+```
+root@wyg-virtual-machine:~/fisco/console# bash start.sh
+=============================================================================================
+Welcome to FISCO BCOS console(2.8.0)!
+Type 'help' or 'h' for help. Type 'quit' or 'q' to quit console.
+ ________ ______  ______   ______   ______       _______   ______   ______   ______
+|        |      \/      \ /      \ /      \     |       \ /      \ /      \ /      \
+| $$$$$$$$\$$$$$|  $$$$$$|  $$$$$$|  $$$$$$\    | $$$$$$$|  $$$$$$|  $$$$$$|  $$$$$$\
+| $$__     | $$ | $$___\$| $$   \$| $$  | $$    | $$__/ $| $$   \$| $$  | $| $$___\$$
+| $$  \    | $$  \$$    \| $$     | $$  | $$    | $$    $| $$     | $$  | $$\$$    \
+| $$$$$    | $$  _\$$$$$$| $$   __| $$  | $$    | $$$$$$$| $$   __| $$  | $$_\$$$$$$\
+| $$      _| $$_|  \__| $| $$__/  | $$__/ $$    | $$__/ $| $$__/  | $$__/ $|  \__| $$
+| $$     |   $$ \\$$    $$\$$    $$\$$    $$    | $$    $$\$$    $$\$$    $$\$$    $$
+ \$$      \$$$$$$ \$$$$$$  \$$$$$$  \$$$$$$      \$$$$$$$  \$$$$$$  \$$$$$$  \$$$$$$
+
+=============================================================================================
+#向group1发交易
+[group:1]> deploy HelloWorld
+transaction hash: 0x31d356f0def5bd18b8c28490f831c1bdc9bec8b9de905445af4dd00d1169cbec
+contract address: 0xf942a1054205455eae2e41b39dcca5a5276cd33a
+currentAccount: 0x96ef3d67ab51177e515d234f1020f6100c9fa428
+
+#查看group1当前块高，块高增加为1表明出块正常，否则请检查group1是否共识正常
+[group:1]> getBlockNumber
+1
+
+#切换到group2
+[group:1]> switch 2
+Switched to group 2.
+
+#向group2发交易
+    [group:2]> deploy HelloWorld
+transaction hash: 0x3c150f43c548d4fdaa84e82adc308f209cb5a52936fb6daede41793b4260c3b6
+contract address: 0xf942a1054205455eae2e41b39dcca5a5276cd33a
+currentAccount: 0x96ef3d67ab51177e515d234f1020f6100c9fa428
+
+[group:2]> getBlockNumber
+1
+
+#切换到group3
+[group:2]> switch 3
+Switched to group 3.
+
+#向group3发交易，返回交易哈希表明交易部署成功
+[group:3]> getBlockNumber
+0
+```
+
