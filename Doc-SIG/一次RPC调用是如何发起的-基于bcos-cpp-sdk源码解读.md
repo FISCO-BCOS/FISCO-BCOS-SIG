@@ -4,10 +4,10 @@ FISCO BCOS C++ SDK 给出的最小可运行示例藏在 `bcos-sdk/sample/rpc/rpc
 
 跨越的源码文件：
 
-- 示例入口：[`rpc_test.cpp`](file:///Users/ljz/fs/FISCO-BCOS/bcos-sdk/sample/rpc/rpc_test.cpp)
-- SDK 装配：[`SdkFactory.cpp`](file:///Users/ljz/fs/FISCO-BCOS/bcos-sdk/bcos-cpp-sdk/SdkFactory.cpp) / [`Sdk.h`](file:///Users/ljz/fs/FISCO-BCOS/bcos-sdk/bcos-cpp-sdk/Sdk.h)
-- JSON-RPC 协议层：[`JsonRpcImpl.cpp`](file:///Users/ljz/fs/FISCO-BCOS/bcos-sdk/bcos-cpp-sdk/rpc/JsonRpcImpl.cpp) / [`JsonRpcRequest.cpp`](file:///Users/ljz/fs/FISCO-BCOS/bcos-sdk/bcos-cpp-sdk/rpc/JsonRpcRequest.cpp)
-- WebSocket 传输层：`bcos-boostssl/websocket/WsConfig.h`
+- 示例入口：[`rpc_test.cpp`](https://github.com/FISCO-BCOS/FISCO-BCOS/blob/master/bcos-sdk/sample/rpc/rpc_test.cpp)
+- SDK 装配：[`SdkFactory.cpp`](https://github.com/FISCO-BCOS/FISCO-BCOS/blob/master/bcos-sdk/bcos-cpp-sdk/SdkFactory.cpp) / [`Sdk.h`](https://github.com/FISCO-BCOS/FISCO-BCOS/blob/master/bcos-sdk/bcos-cpp-sdk/Sdk.h)
+- JSON-RPC 协议层：[`JsonRpcImpl.cpp`](https://github.com/FISCO-BCOS/FISCO-BCOS/blob/master/bcos-sdk/bcos-cpp-sdk/rpc/JsonRpcImpl.cpp) / [`JsonRpcRequest.cpp`](https://github.com/FISCO-BCOS/FISCO-BCOS/blob/master/bcos-sdk/bcos-cpp-sdk/rpc/JsonRpcRequest.cpp)
+- WebSocket 传输层：[`WsConfig.h`](https://github.com/FISCO-BCOS/FISCO-BCOS/blob/master/bcos-boostssl/bcos-boostssl/websocket/WsConfig.h)
 
 整条链路如下：
 
@@ -210,7 +210,7 @@ jsonRpc->setSender([_service](const std::string& _group,
 
 之所以采用「注入 sender」而不是直接在 `JsonRpcImpl` 内部调用 `Service`，是为了把协议组装和传输方式解耦。把 sender 替换成 HTTP、TCP 或者本地内存队列，`JsonRpcImpl` 完全不需要改动。`tarsRPC` 那套实现走的正是另一种 sender。
 
-`sdk->start()` 内部按顺序启动 `Service`、`JsonRpc`、`AMOP`、`EventSub`（在 [`Sdk.h`](file:///Users/ljz/fs/FISCO-BCOS/bcos-sdk/bcos-cpp-sdk/Sdk.h) 里），`Service::start` 才会真正读 `WsConfig` 去和每个 `peer` 建 WebSocket 长连接、完成 SDK 协议握手、拉取群组信息。换句话说，前面所有的「初始化」都只是在准备数据，到这一步才是真正的网络 IO 开始。
+`sdk->start()` 内部按顺序启动 `Service`、`JsonRpc`、`AMOP`、`EventSub`（在 [`Sdk.h`](https://github.com/FISCO-BCOS/FISCO-BCOS/blob/master/bcos-sdk/bcos-cpp-sdk/Sdk.h) 里），`Service::start` 才会真正读 `WsConfig` 去和每个 `peer` 建 WebSocket 长连接、完成 SDK 协议握手、拉取群组信息。换句话说，前面所有的「初始化」都只是在准备数据，到这一步才是真正的网络 IO 开始。
 
 ---
 
@@ -225,7 +225,7 @@ rpc->getBlockNumber("group0", "",
 
 第二个参数 `_nodeName` 传空字符串，意味着「不指定节点，让 SDK 帮我挑」。这是常规用法。如果业务上有「必须打到某台节点」的需求，传具体名字即可。
 
-底层实现（[`JsonRpcImpl.cpp`](file:///Users/ljz/fs/FISCO-BCOS/bcos-sdk/bcos-cpp-sdk/rpc/JsonRpcImpl.cpp)）：
+底层实现（[`JsonRpcImpl.cpp`](https://github.com/FISCO-BCOS/FISCO-BCOS/blob/master/bcos-sdk/bcos-cpp-sdk/rpc/JsonRpcImpl.cpp)）：
 
 ```cpp
 void JsonRpcImpl::getBlockNumber(
@@ -282,24 +282,3 @@ graph TB
 ```
 
 看懂这张图以后再回去看 `getCode`、`sendTransaction`、`call` 之类的方法，会发现实现结构完全一致——只是 `method` 字符串和 `params` 内容不同。SDK 把「怎么把 JSON 送出去」抽象到了 sender 一层，业务方法本身只剩下「拼参数」这点工作。
-
----
-
-## 常见问题
-
-| 现象 | 可能原因 |
-| --- | --- |
-| 连不上节点 | 节点开了 SSL，但示例代码里 `disable_ssl = 1` 把加密关掉了 |
-| 找不到证书 | `is_cert_path = 1` 但传的是相对路径，可执行文件不在 `./conf` 同级 |
-| `getBlockNumber` 没回调 | 没调用 `sdk->start()`，或 `peers` 列表为空，或目标群组不存在 |
-| 国密节点调用失败 | 命令行第三个参数仍是 `ssl`，没切到 `sm_ssl`，加密套件不匹配 |
-| 连接经常断开 | 没设 `heartbeat_period_ms`，中间链路把空闲连接踢掉了 |
-| 多线程下性能上不去 | `thread_pool_size` 设得太小，回调全在排队 |
-
----
-
-## 额外说明
-
-`thread_function` 把 `start/stop` 放在 `while(1)` 里反复跑，是为了做压力测试和内存泄漏检测，不是推荐用法。实际项目里 SDK 通常是构造一次、长期持有，不要每次 RPC 都新建一次。每次 `buildSdk` 都会重新建立 WebSocket 连接、完成 SDK 握手、拉群组信息，开销不小，把它放进热路径会让 RPC 的实际延迟翻好几倍。
-
-整篇示例的核心信息其实可以浓缩成一句话：命令行参数被翻译成 `bcos_sdk_c_config`，`bcos_sdk_c_config` 被翻译成 `WsConfig`，`WsConfig` 被 `SdkFactory` 用来构造 `Service` 和 `JsonRpcImpl`，`JsonRpcImpl` 又通过一个注入式的 `m_sender` 把请求送回 `Service` 走 WebSocket 发出去。理解了这条链，再去看 SDK 的其它接口就只剩参数差异了。
