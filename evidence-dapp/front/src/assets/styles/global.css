@@ -1,0 +1,156 @@
+:root {
+  --primary: #2b5aed;
+  --primary-dark: #1a3fd5;
+  --primary-light: #4e72f0;
+  --primary-bg: #eef2ff;
+  --dark: #1a1f36;
+  --dark-secondary: #2d3259;
+  --accent-cyan: #00d4ff;
+  --accent-green: #00c853;
+  --accent-red: #ff5252;
+  --accent-orange: #ff9800;
+  --bg-body: #f5f7fa;
+  --bg-card: #ffffff;
+  --bg-hover: #f0f2f7;
+  --border-color: #e4e7ed;
+  --text-primary: #1a1f36;
+  --text-regular: #4a5568;
+  --text-secondary: #909399;
+  --text-placeholder: #c0c4cc;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.12);
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --header-height: 60px;
+  --aside-width: 200px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+  color: var(--text-primary);
+  background: var(--bg-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+#app { height: 100%; overflow: hidden; }
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { color: var(--primary-dark); }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c0c4cc; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #909399; }
+
+/* ===== 三固定布局：顶栏固定 + 侧边栏固定 + 内容区滚动 ===== */
+
+/* 外层纵向容器：占满全屏 */
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 顶栏：固定不滚动 */
+.page-layout > .app-header {
+  flex-shrink: 0;
+  height: var(--header-height);
+}
+
+/* 内层横向容器：侧边栏+内容 */
+.page-body {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* 侧边栏：固定不滚动 */
+.page-body > .app-aside {
+  flex-shrink: 0;
+  width: var(--aside-width);
+  overflow: hidden;
+}
+
+/* 内容区：独立滚动 */
+.page-body > .page-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* ===== Element UI 覆盖 ===== */
+.el-button--primary {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light)) !important;
+  border: none !important;
+}
+.el-button--primary:hover {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary)) !important;
+}
+.el-button--primary:active { transform: scale(0.97); }
+
+.el-input__inner:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 2px rgba(43, 90, 237, 0.15) !important;
+}
+
+.el-card {
+  border-radius: var(--radius-md) !important;
+  border: none !important;
+  box-shadow: var(--shadow-sm) !important;
+  transition: all 0.3s ease !important;
+}
+.el-card:hover { box-shadow: var(--shadow-md) !important; }
+
+.el-table th.el-table__cell {
+  background-color: #fafbfc !important;
+  color: var(--text-regular) !important;
+  font-weight: 600;
+}
+
+.el-tag--success { background-color: #e8faf0 !important; color: #00a868 !important; border-color: #b7ebca !important; }
+.el-tag--warning { background-color: #fff8e6 !important; color: #e6a23c !important; border-color: #ffe58f !important; }
+.el-tag--danger { background-color: #fef0f0 !important; color: #f56c6c !important; border-color: #fbc4c4 !important; }
+.el-tag--info { background-color: #f4f4f5 !important; color: #909399 !important; border-color: #e9e9eb !important; }
+
+/* ===== 工具类 ===== */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.mt-10 { margin-top: 10px; }
+.mt-15 { margin-top: 15px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-15 { margin-bottom: 15px; }
+.mb-20 { margin-bottom: 20px; }
+.p-16 { padding: 16px; }
+.p-20 { padding: 20px; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+
+/* ===== 动画 ===== */
+.fade-only-enter-active,
+.fade-only-leave-active { transition: opacity 0.15s ease; }
+.fade-only-enter,
+.fade-only-leave-to { opacity: 0; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
