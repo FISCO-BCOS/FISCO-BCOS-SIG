@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.trace.mapper.TestingMapper">
+
+    <resultMap id="BaseResultMap" type="com.trace.model.TraceTesting">
+        <id column="id" property="id"/>
+        <result column="testing_no" property="testingNo"/>
+        <result column="product_id" property="productId"/>
+        <result column="tester_id" property="testerId"/>
+        <result column="test_items" property="testItems"/>
+        <result column="test_result" property="testResult"/>
+        <result column="report_file_url" property="reportFileUrl"/>
+        <result column="test_date" property="testDate"/>
+        <result column="tx_hash" property="txHash"/>
+        <result column="block_number" property="blockNumber"/>
+        <result column="chain_status" property="chainStatus"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="BaseColumns">
+        id, testing_no, product_id, tester_id, test_items, test_result, report_file_url,
+        test_date, tx_hash, block_number, chain_status, create_time
+    </sql>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM trace_testing ORDER BY create_time DESC
+    </select>
+
+    <select id="findById" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM trace_testing WHERE id = #{id}
+    </select>
+
+    <select id="findByProductId" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM trace_testing WHERE product_id = #{productId} ORDER BY create_time DESC
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO trace_testing (testing_no, product_id, tester_id, test_items, test_result, report_file_url,
+            test_date, tx_hash, block_number, chain_status, create_time)
+        VALUES (#{testingNo}, #{productId}, #{testerId}, #{testItems}, #{testResult}, #{reportFileUrl},
+            #{testDate}, #{txHash}, #{blockNumber}, #{chainStatus}, #{createTime})
+    </insert>
+
+</mapper>

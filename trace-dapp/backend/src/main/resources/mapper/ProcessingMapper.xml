@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.trace.mapper.ProcessingMapper">
+
+    <resultMap id="BaseResultMap" type="com.trace.model.TraceProcessing">
+        <id column="id" property="id"/>
+        <result column="processing_no" property="processingNo"/>
+        <result column="product_id" property="productId"/>
+        <result column="processor_id" property="processorId"/>
+        <result column="input_batch_no" property="inputBatchNo"/>
+        <result column="output_batch_no" property="outputBatchNo"/>
+        <result column="process_steps" property="processSteps"/>
+        <result column="tx_hash" property="txHash"/>
+        <result column="block_number" property="blockNumber"/>
+        <result column="chain_status" property="chainStatus"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="BaseColumns">
+        id, processing_no, product_id, processor_id, input_batch_no, output_batch_no,
+        process_steps, tx_hash, block_number, chain_status, create_time
+    </sql>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM trace_processing ORDER BY create_time DESC
+    </select>
+
+    <select id="findById" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM trace_processing WHERE id = #{id}
+    </select>
+
+    <select id="findByProductId" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM trace_processing WHERE product_id = #{productId} ORDER BY create_time DESC
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO trace_processing (processing_no, product_id, processor_id, input_batch_no, output_batch_no,
+            process_steps, tx_hash, block_number, chain_status, create_time)
+        VALUES (#{processingNo}, #{productId}, #{processorId}, #{inputBatchNo}, #{outputBatchNo},
+            #{processSteps}, #{txHash}, #{blockNumber}, #{chainStatus}, #{createTime})
+    </insert>
+
+</mapper>

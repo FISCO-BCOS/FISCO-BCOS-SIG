@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.trace.mapper.PlantingMapper">
+
+    <resultMap id="BaseResultMap" type="com.trace.model.TracePlanting">
+        <id column="id" property="id"/>
+        <result column="planting_no" property="plantingNo"/>
+        <result column="product_id" property="productId"/>
+        <result column="farmer_id" property="farmerId"/>
+        <result column="base_name" property="baseName"/>
+        <result column="base_address" property="baseAddress"/>
+        <result column="area_size" property="areaSize"/>
+        <result column="crop_variety" property="cropVariety"/>
+        <result column="sow_date" property="sowDate"/>
+        <result column="expected_yield" property="expectedYield"/>
+        <result column="farm_ops" property="farmOps"/>
+        <result column="tx_hash" property="txHash"/>
+        <result column="block_number" property="blockNumber"/>
+        <result column="chain_status" property="chainStatus"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="BaseColumns">
+        id, planting_no, product_id, farmer_id, base_name, base_address, area_size, crop_variety,
+        sow_date, expected_yield, farm_ops, tx_hash, block_number, chain_status, create_time
+    </sql>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM trace_planting ORDER BY create_time DESC
+    </select>
+
+    <select id="findById" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM trace_planting WHERE id = #{id}
+    </select>
+
+    <select id="findByProductId" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM trace_planting WHERE product_id = #{productId} ORDER BY create_time DESC
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO trace_planting (planting_no, product_id, farmer_id, base_name, base_address, area_size,
+            crop_variety, sow_date, expected_yield, farm_ops, tx_hash, block_number, chain_status, create_time)
+        VALUES (#{plantingNo}, #{productId}, #{farmerId}, #{baseName}, #{baseAddress}, #{areaSize},
+            #{cropVariety}, #{sowDate}, #{expectedYield}, #{farmOps}, #{txHash}, #{blockNumber}, #{chainStatus}, #{createTime})
+    </insert>
+
+</mapper>

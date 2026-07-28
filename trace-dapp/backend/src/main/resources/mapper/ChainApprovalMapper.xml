@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.trace.mapper.ChainApprovalMapper">
+
+    <resultMap id="BaseResultMap" type="com.trace.model.ChainApprovalRequest">
+        <id column="id" property="id"/>
+        <result column="product_id" property="productId"/>
+        <result column="product_no" property="productNo"/>
+        <result column="user_id" property="userId"/>
+        <result column="user_role" property="userRole"/>
+        <result column="user_name" property="userName"/>
+        <result column="status" property="status"/>
+        <result column="reject_reason" property="rejectReason"/>
+        <result column="validation_msg" property="validationMsg"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="approve_time" property="approveTime"/>
+        <result column="approver_id" property="approverId"/>
+    </resultMap>
+
+    <insert id="insert" parameterType="com.trace.model.ChainApprovalRequest" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO chain_approval_request (product_id, product_no, user_id, user_role, user_name,
+            status, validation_msg, create_time)
+        VALUES (#{productId}, #{productNo}, #{userId}, #{userRole}, #{userName},
+            0, #{validationMsg}, NOW())
+    </insert>
+
+    <select id="findById" resultMap="BaseResultMap">
+        SELECT * FROM chain_approval_request WHERE id = #{id}
+    </select>
+
+    <select id="findByStatus" resultMap="BaseResultMap">
+        SELECT * FROM chain_approval_request
+        <where>
+            <if test="status != null">status = #{status}</if>
+        </where>
+        ORDER BY create_time DESC
+    </select>
+
+    <select id="findByProductId" resultMap="BaseResultMap">
+        SELECT * FROM chain_approval_request WHERE product_id = #{productId} ORDER BY create_time DESC
+    </select>
+
+    <update id="updateStatus" parameterType="com.trace.model.ChainApprovalRequest">
+        UPDATE chain_approval_request SET status = #{status},
+            reject_reason = #{rejectReason}, update_time = NOW(),
+            approve_time = CASE WHEN #{status} = 1 THEN NOW() ELSE approve_time END,
+            approver_id = #{approverId}
+        WHERE id = #{id}
+    </update>
+
+</mapper>
