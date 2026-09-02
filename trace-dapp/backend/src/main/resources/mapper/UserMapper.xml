@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.trace.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.trace.model.User">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="real_name" property="realName"/>
+        <result column="phone" property="phone"/>
+        <result column="email" property="email"/>
+        <result column="role" property="role"/>
+        <result column="organization" property="organization"/>
+        <result column="status" property="status"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <sql id="BaseColumns">
+        id, username, password, real_name, phone, email, role, organization, status, create_time, update_time
+    </sql>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM sys_user ORDER BY create_time DESC
+    </select>
+
+    <select id="findById" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM sys_user WHERE id = #{id}
+    </select>
+
+    <select id="findByUsername" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM sys_user WHERE username = #{username}
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO sys_user (username, password, real_name, phone, email, role, organization, status, create_time, update_time)
+        VALUES (#{username}, #{password}, #{realName}, #{phone}, #{email}, #{role}, #{organization}, #{status}, #{createTime}, #{updateTime})
+    </insert>
+
+    <update id="update">
+        UPDATE sys_user
+        SET username = #{username}, password = #{password}, real_name = #{realName}, phone = #{phone},
+            email = #{email}, role = #{role}, organization = #{organization}, status = #{status},
+            update_time = #{updateTime}
+        WHERE id = #{id}
+    </update>
+
+    <select id="findByRole" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM sys_user WHERE role = #{role} AND status = 1 ORDER BY create_time DESC
+    </select>
+
+</mapper>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.trace.mapper.LogisticsMapper">
+
+    <resultMap id="BaseResultMap" type="com.trace.model.TraceLogistics">
+        <id column="id" property="id"/>
+        <result column="logistics_no" property="logisticsNo"/>
+        <result column="product_id" property="productId"/>
+        <result column="logistics_provider_id" property="logisticsProviderId"/>
+        <result column="transport_mode" property="transportMode"/>
+        <result column="vehicle_info" property="vehicleInfo"/>
+        <result column="logistics_nodes" property="logisticsNodes"/>
+        <result column="tx_hash" property="txHash"/>
+        <result column="block_number" property="blockNumber"/>
+        <result column="chain_status" property="chainStatus"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="BaseColumns">
+        id, logistics_no, product_id, logistics_provider_id, transport_mode, vehicle_info,
+        logistics_nodes, tx_hash, block_number, chain_status, create_time
+    </sql>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM trace_logistics ORDER BY create_time DESC
+    </select>
+
+    <select id="findById" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM trace_logistics WHERE id = #{id}
+    </select>
+
+    <select id="findByProductId" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM trace_logistics WHERE product_id = #{productId} ORDER BY create_time DESC
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO trace_logistics (logistics_no, product_id, logistics_provider_id, transport_mode, vehicle_info,
+            logistics_nodes, tx_hash, block_number, chain_status, create_time)
+        VALUES (#{logisticsNo}, #{productId}, #{logisticsProviderId}, #{transportMode}, #{vehicleInfo},
+            #{logisticsNodes}, #{txHash}, #{blockNumber}, #{chainStatus}, #{createTime})
+    </insert>
+
+</mapper>

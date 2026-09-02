@@ -1,0 +1,37 @@
+# Build
+backend/target/
+front/dist/
+*.class
+*.jar
+*.war
+*.log
+
+# Dependencies
+front/node_modules/
+
+# Local configuration and blockchain credentials
+backend/src/main/resources/application-local.properties
+backend/src/main/resources/cert/
+*.env
+*.local
+
+# Uploads and local test artifacts
+backend/static/uploads/
+backend/output/
+front/output/
+.playwright-cli/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# OS and cache
+.DS_Store
+Thumbs.db
+.cache/
+*.tmp
+*.bak

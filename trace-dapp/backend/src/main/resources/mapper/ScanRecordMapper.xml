@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.trace.mapper.ScanRecordMapper">
+
+    <resultMap id="BaseResultMap" type="com.trace.model.TraceScanRecord">
+        <id column="id" property="id"/>
+        <result column="product_id" property="productId"/>
+        <result column="scan_type" property="scanType"/>
+        <result column="scanner_info" property="scannerInfo"/>
+        <result column="scan_time" property="scanTime"/>
+        <result column="verify_result" property="verifyResult"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="BaseColumns">
+        id, product_id, scan_type, scanner_info, scan_time, verify_result, create_time
+    </sql>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM trace_scan_record ORDER BY create_time DESC
+    </select>
+
+    <select id="findByProductId" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM trace_scan_record WHERE product_id = #{productId} ORDER BY create_time DESC
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO trace_scan_record (product_id, scan_type, scanner_info, scan_time, verify_result, create_time)
+        VALUES (#{productId}, #{scanType}, #{scannerInfo}, #{scanTime}, #{verifyResult}, #{createTime})
+    </insert>
+
+    <select id="countByProductId" resultType="int">
+        SELECT COUNT(*) FROM trace_scan_record WHERE product_id = #{productId}
+    </select>
+
+</mapper>

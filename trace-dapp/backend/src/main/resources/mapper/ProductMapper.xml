@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.trace.mapper.ProductMapper">
+
+    <resultMap id="BaseResultMap" type="com.trace.model.Product">
+        <id column="id" property="id"/>
+        <result column="product_no" property="productNo"/>
+        <result column="product_name" property="productName"/>
+        <result column="category" property="category"/>
+        <result column="description" property="description"/>
+        <result column="images" property="images"/>
+        <result column="price" property="price"/>
+        <result column="unit" property="unit"/>
+        <result column="origin_address" property="originAddress"/>
+        <result column="farmer_id" property="farmerId"/>
+        <result column="processor_id" property="processorId"/>
+        <result column="tester_id" property="testerId"/>
+        <result column="logistics_id" property="logisticsId"/>
+        <result column="trace_qrcode" property="traceQrcode"/>
+        <result column="tx_hash" property="txHash"/>
+        <result column="block_number" property="blockNumber"/>
+        <result column="status" property="status"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <sql id="BaseColumns">
+        id, product_no, product_name, category, description, images, price, unit, origin_address,
+        farmer_id, processor_id, tester_id, logistics_id, trace_qrcode, tx_hash, block_number,
+        status, create_time, update_time
+    </sql>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM product_product ORDER BY create_time DESC LIMIT #{offset}, #{limit}
+    </select>
+
+    <select id="findById" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM product_product WHERE id = #{id}
+    </select>
+
+    <select id="findByProductNo" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM product_product WHERE product_no = #{productNo}
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO product_product (product_no, product_name, category, description, images, price, unit,
+            origin_address, farmer_id, processor_id, tester_id, logistics_id, trace_qrcode,
+            tx_hash, block_number, status, create_time, update_time)
+        VALUES (#{productNo}, #{productName}, #{category}, #{description}, #{images}, #{price}, #{unit},
+            #{originAddress}, #{farmerId}, #{processorId}, #{testerId}, #{logisticsId}, #{traceQrcode},
+            #{txHash}, #{blockNumber}, #{status}, #{createTime}, #{updateTime})
+    </insert>
+
+    <update id="update">
+        UPDATE product_product
+        SET product_no = #{productNo}, product_name = #{productName}, category = #{category},
+            description = #{description}, images = #{images}, price = #{price}, unit = #{unit},
+            origin_address = #{originAddress}, farmer_id = #{farmerId}, processor_id = #{processorId},
+            tester_id = #{testerId}, logistics_id = #{logisticsId}, trace_qrcode = #{traceQrcode},
+            tx_hash = #{txHash}, block_number = #{blockNumber}, status = #{status},
+            update_time = #{updateTime}
+        WHERE id = #{id}
+    </update>
+
+    <select id="countByDate" resultType="int">
+        SELECT COUNT(*) FROM product_product WHERE product_no LIKE CONCAT(#{datePrefix}, '%')
+    </select>
+
+    <select id="countByCondition" resultType="int">
+        SELECT COUNT(*) FROM product_product
+        <where>
+            <if test="userId != null">
+                AND farmer_id = #{userId}
+            </if>
+            <if test="keyword != null and keyword != ''">
+                AND (product_name LIKE CONCAT('%', #{keyword}, '%') OR product_no LIKE CONCAT('%', #{keyword}, '%'))
+            </if>
+            <if test="category != null and category != ''">
+                AND category = #{category}
+            </if>
+            <if test="status != null">
+                AND status = #{status}
+            </if>
+        </where>
+    </select>
+
+    <select id="findByCondition" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM product_product
+        <where>
+            <if test="userId != null">
+                AND farmer_id = #{userId}
+            </if>
+            <if test="keyword != null and keyword != ''">
+                AND (product_name LIKE CONCAT('%', #{keyword}, '%') OR product_no LIKE CONCAT('%', #{keyword}, '%'))
+            </if>
+            <if test="category != null and category != ''">
+                AND category = #{category}
+            </if>
+            <if test="status != null">
+                AND status = #{status}
+            </if>
+        </where>
+        ORDER BY
+        <choose>
+            <when test="sortBy == 'productName'">product_name</when>
+            <when test="sortBy == 'price'">price</when>
+            <when test="sortBy == 'status'">status</when>
+            <otherwise>create_time</otherwise>
+        </choose>
+        <choose>
+            <when test="sortOrder == 'asc'">ASC</when>
+            <otherwise>DESC</otherwise>
+        </choose>
+        LIMIT #{offset}, #{limit}
+    </select>
+
+    <select id="countTotal" resultType="int">
+        SELECT COUNT(*) FROM product_product
+    </select>
+
+    <select id="countTodayNew" resultType="int">
+        SELECT COUNT(*) FROM product_product WHERE create_time >= #{todayStart}
+    </select>
+
+    <select id="countPendingRecords" resultType="int">
+        SELECT COUNT(*) FROM product_product WHERE tx_hash IS NULL OR tx_hash = ''
+    </select>
+
+    <select id="countTotalScans" resultType="int">
+        SELECT COUNT(*) FROM trace_scan_record
+    </select>
+
+    <select id="findLatest" resultMap="BaseResultMap">
+        SELECT <include refid="BaseColumns"/> FROM product_product ORDER BY create_time DESC LIMIT #{limit}
+    </select>
+
+    <update id="updateStatus">
+        UPDATE product_product SET status = #{status}, update_time = NOW() WHERE id = #{id}
+    </update>
+
+    <update id="updateNullFarmerId">
+        UPDATE product_product SET farmer_id = #{farmerId} WHERE farmer_id IS NULL
+    </update>
+
+</mapper>
