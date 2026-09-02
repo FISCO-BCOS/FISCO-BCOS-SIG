@@ -1,0 +1,43 @@
+# Build
+target/
+*.class
+*.jar
+*.war
+*.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# Node
+front/node_modules/
+front/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+*.env
+*.local
+application-local.yml
+
+# Uploads (user uploaded files)
+evidence-backend/uploads/
+
+# Local blockchain credentials
+evidence-backend/src/main/resources/conf/
+
+# Local browser-test artifacts
+login_debug.png
+output/
+.playwright-cli/
+
+# Temp
+*.tmp
+*.bak
+.cache/

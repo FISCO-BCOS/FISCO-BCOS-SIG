@@ -1,0 +1,41 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.124.128:3306/evidence_dapp?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 250MB
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.evidence.model
+  configuration:
+    map-underscore-to-camel-case: true
+
+jwt:
+  secret: ${JWT_SECRET:EvdDApp2026K9xPmN7qW2tY5uI8aR3f}
+  access-expiration: 300000
+  refresh-expiration: 604800000
+
+file:
+  upload-path: ./uploads/
+
+webase:
+  url: http://192.168.124.128:5002/WeBASE-Front/trans/handle
+
+fisco:
+  bcos:
+    node-url: 192.168.124.128:20200
+    group-id: 1
+    owner-address: "0x11d81144bb4e78dce997e0f1746e1cb6fe092b9f"
+    contract:
+      evidence-address: "0xc8fc04779011f65ee94d3e16df841bc7d36dfec3"

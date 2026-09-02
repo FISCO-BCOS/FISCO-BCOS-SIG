@@ -1,0 +1,12 @@
+[cryptoMaterial]
+certPath = "conf"
+
+[network]
+peers=["192.168.124.128:20200"]
+
+[account]
+authAddress = "0x11d81144bb4e78dce997e0f1746e1cb6fe092b9f"
+
+[threadPool]
+channelProcessorThreadSize = "16"
+receiptProcessorThreadSize = "16"

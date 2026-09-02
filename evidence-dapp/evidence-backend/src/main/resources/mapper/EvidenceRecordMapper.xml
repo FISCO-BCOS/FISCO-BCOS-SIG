@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.evidence.mapper.EvidenceRecordMapper">
+    <select id="selectEvidencePage" resultType="java.util.Map">
+        SELECT
+            er.id, er.evidence_no, er.work_title, er.work_desc, er.work_category,
+            er.work_hash, er.tx_hash, er.block_number, er.evidence_time,
+            er.verify_count, er.status, er.create_time,
+            su.username as user_name,
+            (SELECT COUNT(*) FROM work_file wf WHERE wf.evidence_id = er.id) as file_count
+        FROM evidence_record er
+        LEFT JOIN sys_user su ON er.user_id = su.id
+        <where>
+            <if test="keyword != null and keyword != ''">
+                AND (er.work_title LIKE CONCAT('%', #{keyword}, '%') OR er.evidence_no LIKE CONCAT('%', #{keyword}, '%'))
+            </if>
+            <if test="category != null and category != ''">
+                AND er.work_category = #{category}
+            </if>
+            <if test="status != null">
+                AND er.status = #{status}
+            </if>
+        </where>
+        ORDER BY er.create_time DESC
+    </select>
+
+    <select id="selectMyEvidencePage" resultType="java.util.Map">
+        SELECT
+            er.id, er.evidence_no, er.work_title, er.work_desc, er.work_category,
+            er.work_hash, er.tx_hash, er.block_number, er.evidence_time,
+            er.verify_count, er.status, er.create_time,
+            su.username as user_name,
+            (SELECT COUNT(*) FROM work_file wf WHERE wf.evidence_id = er.id) as file_count
+        FROM evidence_record er
+        LEFT JOIN sys_user su ON er.user_id = su.id
+        <where>
+            AND er.user_id = #{userId}
+            <if test="keyword != null and keyword != ''">
+                AND (er.work_title LIKE CONCAT('%', #{keyword}, '%') OR er.evidence_no LIKE CONCAT('%', #{keyword}, '%'))
+            </if>
+            <if test="category != null and category != ''">
+                AND er.work_category = #{category}
+            </if>
+            <if test="status != null">
+                AND er.status = #{status}
+            </if>
+        </where>
+        ORDER BY er.create_time DESC
+    </select>
+</mapper>
