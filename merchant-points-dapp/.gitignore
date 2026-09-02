@@ -1,0 +1,48 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Java
+target/
+*.class
+*.jar
+*.war
+*.log
+logs/
+
+# Node
+node_modules/
+dist/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Env
+*.env
+*.local
+
+# Build
+*.patch
+*.bak
+*.swp
+*~
+
+# Screenshots (too many binary files)
+test-screenshots/
+
+# Security - blockchain certificates (contains private keys)
+cert/
+*.key
+*.crt
+
+# Temp scripts
+e2e_test.py
+ActivateUsers.java
+ApproveMerchant.java
+ApproveMerchant2.java
+CheckMerchants.java
+CheckUsers.java
